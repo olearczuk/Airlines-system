@@ -1,0 +1,26 @@
+{% extends "template.html" %}
+
+{% block content %}
+    <br><br>
+    Airplane number: {{ flight.airplane.official_number }}<br>
+    Capacity: {{ flight.airplane.capacity }}<br>
+    Flight from {{ flight.start_airport.city }} to {{ flight.final_airport.city }}<br>
+    <br>
+    Registered passengers:
+    <br>
+    {% for passenger in passengers %}
+        <span> {{ passenger.name }} {{ passenger.surname }}</span>
+        <br>
+    {% endfor %}
+
+    {% if request.user.is_authenticated %}
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Add passenger">
+        </form>
+    {% endif %}
+    {% if was_error %}
+        adfadfasdfadfsdf
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "template.html" %}
+
+{% block content %}
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p><input type="submit" value="Register"></p>
+    </form>
+{% endblock %}

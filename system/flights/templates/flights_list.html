@@ -1,0 +1,66 @@
+{% extends "template.html" %}
+{% load static %}
+<!--<link rel="stylesheet" type="text/css" href="{% static "/flights/flights_list.css" %}">-->
+{% block content %}
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 80%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        @media only screen and (max-width: 760px),
+        (min-device-width: 768px) and (max-device-width: 1024px){
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            td, th {
+                text-align: left;
+                border: none;
+                border-bottom: 1px solid #dddddd;
+                position: relative;
+                padding-left: 20%;
+            }
+        }
+
+    </style>
+
+    <form method="get">
+        {{ form.as_p }}
+        <p><input type="submit" value="Filter"></p>
+    </form>
+
+    <table>
+        <tr>
+            <th>Link</th>
+            <th>From</th>
+            <th>To</th>
+            <th>Airplane</th>
+            <th>Departure time</th>
+            <th>Arrival time</th>
+        </tr>
+    {% for flight in flights %}
+        <tr>
+            <td><a href="/flights/{{ flight.id }}">link</a></td>
+            <td>{{ flight.start_airport.city }}</td>
+            <td>{{ flight.final_airport.city }}</td>
+            <td>{{ flight.airplane.official_number }}</td>
+            <td>{{ flight.departure_time }}</td>
+            <td>{{ flight.arrival_time }}</td>
+        </tr>
+    {% endfor %}
+    <br>
+    </table>
+
+
+{% endblock %}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>MIM Airlines</title>
+</head>
+<body>
+<a href="/flights/flights_list">Flights list</a><br><br>
+{% if request.user.is_authenticated %}
+    <nav>
+        <a href="{% url 'logout' %}">Logout</a>
+    </nav>
+{% else %}
+    <nav>
+        <a href="{% url 'login' %}">Login</a>
+    </nav>
+{% endif %}
+<header>
+    <h1>MIM Airlines</h1>
+</header>
+{% block content %}{% endblock %}
+</body>
+</html>

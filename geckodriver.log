@@ -1,0 +1,20 @@
+1527245257055	geckodriver	INFO	geckodriver 0.20.1
+1527245257084	geckodriver	INFO	Listening on 127.0.0.1:58477
+1527245258412	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.TRPZAVKEuCTN"
+1527245259756	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1527245260701	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1527245260706	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1527245261348	Marionette	INFO	Enabled via --marionette
+1527245266550	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1527245267560	Marionette	INFO	Listening on port 33619
+1527245267687	Marionette	WARN	TLS certificate errors will be ignored for this session
+1527245268049	Marionette	DEBUG	Register listener.js for window 2147483649
+1527245316600	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1527245317533	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1527245317534	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+JavaScript warning: https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js, line 1: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1527245319891	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "https://www.mimuw.edu.pl/"
+1527245320689	Marionette	DEBUG	Received DOM event "pageshow" for "https://www.mimuw.edu.pl/"
+1527245335373	Marionette	DEBUG	Register listener.js for window 2147483653
+1527245335613	Marionette	DEBUG	Register listener.js for window 2147483655
+1527245732056	Marionette	DEBUG	Register listener.js for window 2147483659
