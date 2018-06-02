@@ -24,6 +24,8 @@ class Command(BaseCommand):
             name = fake.random_number()
             capacity = 20 + randint(0, 50)
 
+            name = i
+
             airplane = Airplane(official_number=name, capacity=capacity)
             airplane.full_clean()
             airplane.save()
@@ -41,7 +43,8 @@ class Command(BaseCommand):
 
         tz = timezone('Europe/Warsaw')
         shuffle(airplanes)
-        for airplane in airplanes:
+        for i in range(len(airplanes)):
+            airplane = airplanes[randint(0, len(airplanes) - 1)]
             d_time = tz.localize(fake.date_time())
 
             for i in range(4):

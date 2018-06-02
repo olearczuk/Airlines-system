@@ -18,23 +18,28 @@ def flights_view(request):
         form = FlightForm()
         print("departure: ", departure)
         print("arrival: ", arrival)
-        print(isinstance(departure, datetime.date))
-        print(isinstance(arrival, datetime.date))
+        print(isinstance(departure, datetime.datetime))
+        print(isinstance(arrival, datetime.datetime))
 
-        if departure is not None and arrival is not None\
-            and isinstance(departure, datetime.date) and isinstance(arrival, datetime.date):
+        flights = Flight.objects.order_by('-departure_time').all()
+
+        if departure is not None and arrival is not None:
             flights = Flight.objects.filter(departure_time__gte=departure,
                                             arrival_time__lte=arrival).order_by('-departure_time')\
                                             .all()
-        else:
-            flights = Flight.objects.order_by('-departure_time').all()
-    return render(request, template_name="flights_list.html", context=locals())
+
+        return render(request, template_name="flights_list.html", context=locals())
+    else:
+        form = FlightForm(request.POST)
+        if form.is_valid():
+            print("departure: ", request.POST.get("departure_time"))
+            print("arrival: ", request.POST.get("arrival_time"))
+        return redirect(to=request.path, context=locals())
 
 
 @transaction.atomic
 def flight_view(request, flight_id):
     """Flight view"""
-    err = False
     flight = get_object_or_404(Flight, id=flight_id)
     if request.method == 'GET':
         form = PassengerForm()
@@ -58,9 +63,9 @@ def flight_view(request, flight_id):
                 ticket = Ticket(flight=flight, passenger=passenger)
                 ticket.full_clean()
                 ticket.save()
-
+            print("POST", err)
             # return redirect(to=request.path, was_error=err)
-            return redirect(to=request.path, context=locals())
+            return redirect(to=request.path, err=err)
 
 
 def index(request):
@@ -69,9 +74,3 @@ def index(request):
     # return render(request, "system/static/asdf.html")
 
 
-# def give_flights_list(request):
-#
-#     a = list(Flight.objects.all())
-#     a = serializers.serialize('json', a)
-#
-#     return JsonResponse(a, safe=False)
