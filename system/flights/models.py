@@ -8,6 +8,7 @@ class Passenger(models.Model):
     surname = models.CharField(max_length=100)
 
     class Meta:
+        """Meta"""
         unique_together = ('name', 'surname')
 
 
@@ -23,7 +24,18 @@ class Airport(models.Model):
     city = models.CharField(max_length=100)
 
     class Meta:
+        """Meta"""
         unique_together = ('country', 'city')
+
+
+class Crew(models.Model):
+    """Crew class"""
+    captainsName = models.CharField(max_length=150)
+    captainsSurname = models.CharField(max_length=150)
+
+    class Meta:
+        """Meta"""
+        unique_together = ('captainsName', 'captainsSurname')
 
 
 class Flight(models.Model):
@@ -39,22 +51,11 @@ class Flight(models.Model):
                                       related_name='final_airport')
     arrival_time = models.DateTimeField()
 
+    crew = models.ForeignKey(Crew, on_delete=models.CASCADE, related_name='flights',
+                             default=None, null=True, blank=True)
+
 
 class Ticket(models.Model):
     """Ticket class"""
     flight = models.ForeignKey(Flight, on_delete=models.CASCADE)
     passenger = models.ForeignKey(Passenger, on_delete=models.CASCADE)
-
-
-class Crew(models.Model):
-    captainsName = models.CharField(max_length=150)
-    captainsSurname = models.CharField(max_length=150)
-    flights = models.ManyToManyField(Flight, related_name='crew', through='Contract')
-
-    class Meta:
-        unique_together = ('captainsName', 'captainsSurname')
-
-
-class Contract(models.Model):
-    flight = models.ForeignKey(Flight, on_delete=models.CASCADE)
-    crew = models.ForeignKey(Crew, on_delete=models.CASCADE)

@@ -5,9 +5,10 @@
 
 from django.db import transaction
 from django.shortcuts import render, get_object_or_404, redirect
+from django.utils import timezone
+from dateutil.parser import parse
 from system.flights.forms import PassengerForm, FlightForm
 from system.flights.models import Flight, Passenger, Ticket
-import datetime
 
 
 def flights_view(request):
@@ -16,24 +17,27 @@ def flights_view(request):
         departure = request.GET.get("departure_time")
         arrival = request.GET.get("arrival_time")
         form = FlightForm()
-        print("departure: ", departure)
-        print("arrival: ", arrival)
-        print(isinstance(departure, datetime.datetime))
-        print(isinstance(arrival, datetime.datetime))
-
+        dep_time = timezone.now()
+        arr_time = timezone.now()
         flights = Flight.objects.order_by('-departure_time').all()
+        was_err = False
+        if departure and arrival:
+            try:
+                dep_time = parse(departure)
+                arr_time = parse(arrival)
+            except Exception as e:
+                print(e)
+                was_err = True
+                return render(request, template_name="flights_list.html", context=locals())
 
         if departure is not None and arrival is not None:
-            flights = Flight.objects.filter(departure_time__gte=departure,
-                                            arrival_time__lte=arrival).order_by('-departure_time')\
+            flights = Flight.objects.filter(departure_time__gte=dep_time,
+                                            arrival_time__lte=arr_time).order_by('-departure_time')\
                                             .all()
 
         return render(request, template_name="flights_list.html", context=locals())
     else:
         form = FlightForm(request.POST)
-        if form.is_valid():
-            print("departure: ", request.POST.get("departure_time"))
-            print("arrival: ", request.POST.get("arrival_time"))
         return redirect(to=request.path, context=locals())
 
 
@@ -42,6 +46,11 @@ def flight_view(request, flight_id):
     """Flight view"""
     flight = get_object_or_404(Flight, id=flight_id)
     if request.method == 'GET':
+        to_show = "add_info" in request.session
+        info = ""
+        if to_show:
+            info = request.session["add_info"]
+            del request.session["add_info"]
         form = PassengerForm()
         passengers = flight.passengers.all()
         return render(request, template_name='flight.html', context=locals())
@@ -55,7 +64,7 @@ def flight_view(request, flight_id):
             reserved = Ticket.objects.filter(flight=flight).count()
             available = flight.airplane.capacity
 
-            err = True
+            request.session["add_info"] = "No more seats!"
 
             if reserved < available:
                 err = False
@@ -63,14 +72,11 @@ def flight_view(request, flight_id):
                 ticket = Ticket(flight=flight, passenger=passenger)
                 ticket.full_clean()
                 ticket.save()
-            print("POST", err)
-            # return redirect(to=request.path, was_error=err)
-            return redirect(to=request.path, err=err)
+                request.session["add_info"] = "Done!"
+
+            return redirect(to=request.path)
 
 
 def index(request):
     """Index"""
     return redirect("/flights/flights_list")
-    # return render(request, "system/static/asdf.html")
-
-

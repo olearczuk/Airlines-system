@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from system.flights.views import index#, give_flights_list
+from system.flights.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,6 +23,7 @@ urlpatterns = [
     path('auth/', include('system.authentication.urls')),
     path('flights/', include('system.flights.urls')),
     path('api/', include('system.api.urls')),
+    # path('crew/', crew_view)
 
     # path('123/', give_flights_list),
 ]

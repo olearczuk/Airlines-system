@@ -2,8 +2,8 @@ from django.core.management import BaseCommand
 from django.db import transaction
 from system.flights.models import Airplane, Airport, Flight
 from faker import Faker
-from random import random, randint, choice, shuffle
-from pytz import timezone
+from random import randint, choice, shuffle, sample
+import pytz
 from datetime import timedelta
 
 
@@ -20,16 +20,13 @@ class Command(BaseCommand):
         airplanes = []
         airports = []
 
-        for i in range(50):
-            name = fake.random_number()
-            capacity = 20 + randint(0, 50)
+        numbers = sample(range(100, 999), 50)
 
-            name = i
-
-            airplane = Airplane(official_number=name, capacity=capacity)
+        for number in numbers:
+            capacity = 4 + randint(0, 5)
+            airplane = Airplane(official_number=number, capacity=capacity)
             airplane.full_clean()
             airplane.save()
-
             airplanes.append(airplane)
 
         for i in range(50):
@@ -41,22 +38,33 @@ class Command(BaseCommand):
             airport.save()
             airports.append(airport)
 
-        tz = timezone('Europe/Warsaw')
+        tz = pytz.utc
         shuffle(airplanes)
-        for i in range(len(airplanes)):
-            airplane = airplanes[randint(0, len(airplanes) - 1)]
-            d_time = tz.localize(fake.date_time())
 
-            for i in range(4):
-                a_time = d_time + timedelta(hours=randint(1, 5))
-                flight = Flight(start_airport=choice(airports),
-                                final_airport=choice(airports),
-                                airplane=airplane,
-                                departure_time=d_time,
-                                arrival_time=a_time)
-                flight.full_clean()
-                flight.save()
-                d_time += timedelta(days=randint(1, 60))
+        # d1 = datetime.strptime('1/1/2017 1:30 PM', '%m/%d/%Y %I:%M %p')
+        # d2 = datetime.strptime('1/1/2018 4:50 AM', '%m/%d/%Y %I:%M %p')
+
+        for airplane in airplanes:
+
+            d_time = fake.date_time_between(start_date='-1y', tzinfo=pytz.utc)
+            a_time = d_time + timedelta(hours=randint(1, 10))
+            flight = Flight(start_airport=choice(airports),
+                            final_airport=choice(airports),
+                            airplane=airplane,
+                            departure_time=d_time,
+                            arrival_time=a_time)
+            flight.full_clean()
+            flight.save()
+
+            d_time = fake.date_time_between(start_date=a_time, tzinfo=pytz.utc)
+            a_time = d_time + timedelta(hours=randint(1, 10))
+            flight = Flight(start_airport=choice(airports),
+                            final_airport=choice(airports),
+                            airplane=airplane,
+                            departure_time=d_time,
+                            arrival_time=a_time)
+            flight.full_clean()
+            flight.save()
 
     def handle(self, *args, **options):
         self.generate_data()

@@ -39,7 +39,9 @@
         {{ form.as_p }}
         <p><input type="submit" value="Filter"></p>
     </form>
-
+    {% if was_err %}
+        <span style="color:red">Wrong format, proper format: YYYY-MM-DD HH:MM UTC</span><br>
+    {% endif %}
     <table>
         <tr>
             <th>Link</th>

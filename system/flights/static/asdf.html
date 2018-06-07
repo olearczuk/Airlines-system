@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crew</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <crew-creator v-on:post-crew="postCrew($event)"></crew-creator>
+        <table>
+            <tr>
+                <th>Flight</th>
+                <th><span style="color:red">&#9992;</span> nr</th>
+                <th>Current crew</th>
+            </tr>
+            <tr v-for="flight in flights">
+                <td>
+                    {{ flight.start_airport.city }}({{ flight.start_airport.country }})
+                    <span style="color:red">&#8658;</span>
+                    {{ flight.final_airport.city }}({{ flight.final_airport.country }})
+                    <br/>
+                    <crew-picker
+                        v-on:patch-crew="patchCrew($event)"
+                        v-bind:crews='crews'
+                    ></crew-picker>
+                </td>
+                <td>{{ flight.airplane.official_number }}</td>
+                <td>{{ flight.crew === null
+                        ? "Not chosen yet" 
+                        : crews[flight.crew - 1].id + ". " + crews[flight.crew - 1].captainsName + " " + crews[flight.crew - 1].captainsSurname}}
+            </tr>
+        </table>
+     </div>
+
+     <script>
+        Vue.component('crew-picker', {
+            props:['crews'],
+            data() {
+                return {
+                    selectedCrew: '',
+                }
+            },
+            template: `
+                <div class='crew-picker'>
+                    <select v-model="selectedCrew">
+                    <option value="">Choose crew</option>
+                        <option v-for="crew in crews">
+                            {{crew.id + ". " + crew.captainsName + " " + crew.captainsSurname}}
+                        </option>
+                    </select>
+                    <button v-on:click="pom">Submit</button>
+                </div>
+            `,
+            methods: {
+                pom: function () {
+                    if (this.selectedCrew === '')
+                        alert('Choose crew before submitting!')
+                    else
+                        this.$emit('patch-crew', this.selectedCrew)
+                        
+                }
+            }
+
+        })
+
+        Vue.component('crew-creator', {
+            data() {
+                return {
+                    captainsName: '',
+                    captainsSurname: '',
+                }
+            },
+            template: `
+                <div class="crew-creator">
+                    captain's name: <br> <input v-model='captainsName' type="text"> <br>
+                    captain's surname: <br> <input v-model='captainsSurname' type="text"> <br><br>
+                    <button v-on:click='submit'>Submit</button>
+                </div>
+            `,
+            methods: {
+                submit: function () {
+                    // if (this.captainsName === '' || this.captainsSurname === '')
+                    //     alert('Fields can not be empty!')
+                    // else
+                        this.$emit('post-crew', {
+                            "captainsName": this.captainsName, 
+                            "captainsSurname": this.captainsSurname
+                        })
+                }
+
+            }
+        })
+
+
+        var app = new Vue({
+            el: '#app',
+            data: {
+                flights: [],
+                crews: [],
+                api_root: '/api/'
+            },
+            created() {
+                let url = this.api_root + 'flights.json'
+
+                fetch(url)
+                    .then((response) => response.json())
+                    .then((response) => {
+                        this.flights = response
+                        console.log('flights', this.flights)
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                    })
+               
+                url = this.api_root + 'crew.json'
+                fetch(url)
+                    .then((response) => response.json())
+                    .then((response) => {
+                        this.crews = response
+                        console.log('crews', this.crews)
+                    })
+                    .catch((error) => console.log(error))
+
+            },
+            methods: {
+                patchCrew: function (crew) {
+                },
+                postCrew: function(data) {
+                    console.log(data)
+                    if (data.captainsName === '' || data.captainsSurname === '')
+                        alert('Make sure to write both name and surname!')
+                    let fetchData = {
+                        method: 'POST',
+                        body: JSON.stringify(data),
+                        headers: {
+                            "Accept": "application/json",
+                            'content-type': 'application/json',
+                        },
+                    }
+                    let url = this.api_root + 'crew/'
+
+                    // let form_data = new FormData(data)
+
+                    // for ( var key in data ) {
+                    //     form_data.append(key, data[key]);
+                    // }  
+
+                    
+                    
+                    // let http = new XMLHttpRequest()
+                    // http.setRequestHeader('X-CSRF-Token', $('meta[name=csrf-token]').attr('content'));
+                    // http.open('POST', url, true)
+                    // // http.setRequestHeader('content-type', 'application/json')
+                    // http.onload = function () {
+                    //     console.log(this.responseText)
+                    // }
+                    // http.send(form_data)
+
+                    fetch(url, fetchData)
+                        .then((response) => {
+                            console.log(response)
+                            if (response.status === 400) {
+                                alert("This name and surname are already in use!")
+                                return ''
+                            }
+                            if (response.status === 401) {
+                                alert("You need to bo logged in to create new crew. Head to localhost:8000/auth/login.")
+                                return ''
+                            }
+                            if (response.ok === false)
+                                return ''
+                            console.log(response.status)
+                            console.log(response.body)
+                            return response.json()
+                        })
+                        .then((data) => {
+                            if (data != '')
+                                this.crews.push(data)
+                        })
+                        .catch((error) => console.log(error))
+                }
+            }
+        })
+     </script>
+</body>
+</html>

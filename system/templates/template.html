@@ -6,6 +6,7 @@
 </head>
 <body>
 <a href="/flights/flights_list">Flights list</a><br><br>
+<a href="/static/crews.html">Crew manager</a><br><br>
 {% if request.user.is_authenticated %}
     <nav>
         <a href="{% url 'logout' %}">Logout</a>
