@@ -23,7 +23,5 @@ urlpatterns = [
     path('auth/', include('system.authentication.urls')),
     path('flights/', include('system.flights.urls')),
     path('api/', include('system.api.urls')),
-    # path('crew/', crew_view)
 
-    # path('123/', give_flights_list),
 ]

@@ -128,6 +128,11 @@
 
             },
             methods: {
+                getCookie: function (name) {
+                    let value = "; " + document.cookie;
+                    let parts = value.split("; " + name + "=");
+                    if (parts.length == 2) return parts.pop().split(";").shift();
+                },
                 crewName: function (crew_id) {
                     if (crew_id === null)
                         return ''
@@ -137,30 +142,34 @@
                             return crew.captainsName + " " + crew.captainsSurname
                 },
                 patchCrew: function (data) {
-                    
+                    let csrftoken = this.getCookie('csrftoken')
                     let flight = data.flight
+                    console.log(flight, this.flights.indexOf(flight))
                     let crew = data.crew
+                    let url = this.api_root + 'flights/' + flight.id + '/'
                     if (crew != flight.crew) {
-                        let url = this.api_root + 'flights/' + flight.id + '/'
                         let fetchData = {
                             method: 'PATCH',
                             body: JSON.stringify({
                                 "crew": crew
                             }),
+                            credentials: 'same-origin',
                             headers: {
-                                "Accept": "application/json",
                                 'content-type': 'application/json',
+                                'X-CSRFToken': csrftoken
                             },
                         }
                         fetch(url, fetchData)
                             .then((response) => {
-                                console.log(response)
                                 if (response.status === 400)
                                     alert("This crew is busy!")
                                 if (response.status === 401)
                                     alert("You need to bo logged in to set crew. Head to localhost:8000/auth/login.")
                                 if (response.ok === false)
                                     return ''
+                                console.log(response)
+                                if (response.redirected)
+                                    window.location.replace(response.url)
                                 return response.json()
                             })
                             .then((data) => {
@@ -177,16 +186,21 @@
                 postCrew: function(data) {
                     if (data.captainsName === '' || data.captainsSurname === '')
                         alert('Make sure to write both name and surname!')
-                    console.log(data, JSON.stringify(data))
+                    let csrftoken = this.getCookie('csrftoken')
+                    let url = this.api_root + 'crew/'      
+
                     let fetchData = {
-                        method: 'POST',
-                        body: JSON.stringify(data),
-                        headers: {
-                            "Accept": "application/json",
-                            'content-type': 'application/json',
-                        },
-                    }
-                    let url = this.api_root + 'crew/'
+                            method: 'POST',
+                            body: JSON.stringify({
+                                "captainsName": data.captainsName,
+                                "captainsSurname": data.captainsSurname,
+                            }),
+                            credentials: 'same-origin',
+                            headers: {
+                                'content-type': 'application/json',
+                                'X-CSRFToken': csrftoken
+                            },
+                        }
 
                     fetch(url, fetchData)
                         .then((response) => {
@@ -200,6 +214,7 @@
                             return response.json()
                         })
                         .then((data) => {
+                            console.log("data", data)
                             if (data != '')
                                 this.crews.push(data)
                         })
