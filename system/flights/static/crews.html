@@ -17,6 +17,8 @@
             <tr>
                 <th>Flight</th>
                 <th><span style="color:red">&#9992;</span> nr</th>
+                <th>Departure time</th>
+                <th>Arrival time</th>
                 <th>Current crew</th>
             </tr>
             <tr v-for="flight in flights">
@@ -32,7 +34,9 @@
                     ></crew-picker>
                 </td>
                 <td>{{ flight.airplane.official_number }}</td>
-                <td>{{crewName(flight.crew)}}</td>
+                <td>{{ formatDate(flight.departure_time) }}</td>
+                <td>{{ formatDate(flight.arrival_time) }}</td>
+                <td>{{ crewName(flight.crew) }}</td>
             </tr>
         </table>
      </div>
@@ -102,7 +106,7 @@
             data: {
                 flights: [],
                 crews: [],
-                api_root: '/api/'
+                api_root: '/api/',
             },
             created() {
                 let url = this.api_root + 'flights.json'
@@ -128,6 +132,14 @@
 
             },
             methods: {
+                formatDate: function (date) {
+                    let options = {  
+                        year: "numeric", month: "short",  
+                        day: "numeric", hour: "2-digit", minute: "2-digit"  
+                    }
+                    date = new Date('2018-06-07T05:33:29Z')
+                    return date.toLocaleDateString("en-US", options)
+                },
                 getCookie: function (name) {
                     let value = "; " + document.cookie;
                     let parts = value.split("; " + name + "=");
@@ -223,5 +235,37 @@
             }
         })
      </script>
+        <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        @media only screen and (max-width: 760px),
+        (min-device-width: 768px) and (max-device-width: 1024px){
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            td, th {
+                text-align: left;
+                border: none;
+                border-bottom: 1px solid #dddddd;
+                position: relative;
+                padding-left: 20%;
+            }
+        }
+
+    </style>
 </body>
 </html>
