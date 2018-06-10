@@ -2,6 +2,7 @@ from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
 from .serializers import *
+from django.core.exceptions import ValidationError
 
 
 class FlightViewSet(viewsets.ModelViewSet):
@@ -9,16 +10,18 @@ class FlightViewSet(viewsets.ModelViewSet):
     serializer_class = FlightSerializer
 
     def partial_update(self, request, *args, **kwargs):
-        instance = self.get_object()
+        flight = self.get_object()
         if not request.user.is_authenticated:
             return Response(status=status.HTTP_401_UNAUTHORIZED)
-        # TODO select_for_update
+
         crew_id = request.data['crew']
-        crew_flights = Flight.objects.filter(crew=crew_id, departure_time__lte=instance.arrival_time,
-                                             arrival_time__gte=instance.departure_time)
-        if crew_flights.exists():
+        crew = Crew.objects.get(pk=crew_id)
+        flight.crew = crew
+        try:
+            flight.full_clean()
+        except ValidationError:
             return Response(status=status.HTTP_400_BAD_REQUEST)
-        serializer = self.get_serializer(instance, data=request.data, partial=True)
+        serializer = self.get_serializer(flight, data=request.data, partial=True)
         serializer.is_valid(raise_exception=True)
         self.perform_update(serializer)
         return Response(serializer.data)

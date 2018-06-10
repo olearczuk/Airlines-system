@@ -1,5 +1,7 @@
 """models module"""
+from django.core.exceptions import ValidationError
 from django.db import models
+from django.db.models import Q
 
 
 class Passenger(models.Model):
@@ -11,11 +13,21 @@ class Passenger(models.Model):
         """Meta"""
         unique_together = ('name', 'surname')
 
+    def __str__(self):
+        return 'Passenger %s %s' % (self.name, self.surname)
+
 
 class Airplane(models.Model):
     """Airplane class"""
     capacity = models.IntegerField(default=25)
     official_number = models.CharField(max_length=100, primary_key=True)
+
+    def clean(self):
+        if self.capacity < 0:
+            raise ValidationError('Airplane can not have less than 0 seats')
+
+    def __str__(self):
+        return 'Airplane %s, capacity %s' % (self.official_number, self.capacity)
 
 
 class Airport(models.Model):
@@ -27,6 +39,9 @@ class Airport(models.Model):
         """Meta"""
         unique_together = ('country', 'city')
 
+    def __str__(self):
+        return 'Airport located in %s (%s)' % (self.city, self.country)
+
 
 class Crew(models.Model):
     """Crew class"""
@@ -36,6 +51,9 @@ class Crew(models.Model):
     class Meta:
         """Meta"""
         unique_together = ('captainsName', 'captainsSurname')
+
+    def __str__(self):
+        return 'Crew ordered by captain %s %s' % (self.captainsName, self.captainsSurname)
 
 
 class Flight(models.Model):
@@ -54,8 +72,30 @@ class Flight(models.Model):
     crew = models.ForeignKey(Crew, on_delete=models.CASCADE, related_name='flights',
                              default=None, null=True, blank=True)
 
+    def clean(self):
+        if self.arrival_time <= self.departure_time:
+            raise ValidationError('Arrival time <= departure time')
+        flights = Flight.objects.exclude(pk=self.pk)
+        other_flights = flights.filter(
+            departure_time__lte=self.arrival_time,
+            arrival_time__gte=self.departure_time,
+        )
+        if other_flights.filter(airplane=self.airplane).exists():
+            raise ValidationError('This flights airplane is currently busy')
+        if other_flights.filter(crew=self.crew).exists():
+            raise ValidationError('This flights crew is currently busy')
+
+    def __str__(self):
+        return 'Flight %s -> %s' % (self.start_airport, self.final_airport)
+
 
 class Ticket(models.Model):
     """Ticket class"""
     flight = models.ForeignKey(Flight, on_delete=models.CASCADE)
     passenger = models.ForeignKey(Passenger, on_delete=models.CASCADE)
+
+    def clean(self):
+        pass_num = Ticket.objects.filter(flight=self.flight).count()
+        places = self.flight.airplane.capacity
+        if places == pass_num:
+            raise ValidationError('No more places in airplane')
