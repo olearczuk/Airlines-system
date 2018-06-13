@@ -4,9 +4,9 @@
     {% else %}
         <form action="{% url 'login' %}" method="POST">
             {% csrf_token %}
-            <input type="text" name="username" placeholder="username">
-            <input type="password" name="password" placeholder="password">
-            <input type="submit" value="Login">
+            <input type="text" id="login_username" name="username" placeholder="username">
+            <input type="password" id="login_password" name="password" placeholder="password">
+            <input type="submit" id="login_button" value="Login">
         </form>
         or <a href="{% url 'register' %}">Register</a>
     {% endif %}

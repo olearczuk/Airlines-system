@@ -41,6 +41,7 @@ function createSelect(flightId) {
 	button.innerText = "Submit";
 	select.setAttribute("id", "select" + flightId);
 	button.setAttribute("onClick", "patchCrew(" + flightId + ")");
+	button.setAttribute("id", "select_button" + flightId);
 	return div;
 }
 
@@ -49,7 +50,7 @@ function createRow(data) {
 	let actRow = document.createElement("tr");
 	children = [];
 	children.push(data.start_airport.city + "(" + data.start_airport.country +
-		") -> " + data.final_airport.city + "(" + data.final_airport.country);
+		") -> " + data.final_airport.city + "(" + data.final_airport.country + ")");
 	children.push(data.airplane.official_number);
 	children.push(formatDate(data.departure_time));
 	children.push(formatDate(data.arrival_time));
@@ -168,8 +169,7 @@ function postCrew() {
 					let newOption = document.createElement("option");
 					newOption.value = crewId;
 					newOption.innerText = crewName;
-					let select = document.getElementById("select" + flight.id);
-					select.appendChild(newOption);
+					document.getElementById("select" + flight.id).appendChild(newOption);
 				}
 				alert("New crew added!");
 			}

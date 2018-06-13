@@ -20,6 +20,7 @@ disable=E0602, E0603,
  no-method-argument,
  no-self-argument,
 # "W" Warnings for stylistic problems or minor programming issues
+ no-name-in-module,
  abstract-method,
  arguments-differ,
  attribute-defined-outside-init,
@@ -92,7 +93,7 @@ no-docstring-rgx=((__.*__)|([tT]est.*)|setUp|tearDown)$
 
 [FORMAT]
 # Maximum number of characters on a single line.
-max-line-length=100
+max-line-length=120
 
 [VARIABLES]
 # List of additional names supposed to be defined in builtins. Remember that

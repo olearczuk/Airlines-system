@@ -1,17 +1,11 @@
 import json
+from datetime import datetime, timedelta
 from django.test import TestCase, Client
-from system.flights.models import Flight, Airplane, Crew, Airport
 from django.contrib.auth.models import User
-from datetime import datetime , timedelta
 from django.utils import timezone
-from django.contrib.auth import authenticate
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase
-
-# from selenium.webdriver.firefox.webdriver import WebDriver
-# from selenium.webdriver.common.by import By
-# from selenium.webdriver.support.ui import WebDriverWait
-# from selenium.webdriver.support import expected_conditions as EC
-# from selenium.webdriver.support.ui import Select
+from selenium.webdriver.firefox.webdriver import WebDriver
+from system.flights.models import Flight, Airplane, Crew, Airport
 
 
 class ApiTest(TestCase):
@@ -27,7 +21,8 @@ class ApiTest(TestCase):
             airplane = Airplane.objects.create(official_number=i, capacity=3)
             crew = Crew.objects.create(captainsName='Name{}'.format(i), captainsSurname='Surname{}'.format(i))
             Flight.objects.create(start_airport=start_airport, final_airport=final_airport, crew=crew,
-                                  airplane=airplane, departure_time=self.date, arrival_time=self.date + timedelta(hours=4))
+                                  airplane=airplane, departure_time=self.date,
+                                  arrival_time=self.date + timedelta(hours=4))
 
     def testCrews(self):
         response = self.client.get('/api/crew/')
@@ -65,3 +60,52 @@ class ApiTest(TestCase):
                                      data=json.dumps({"crew": new_crew}))
         self.assertEqual(response.status_code, 401)
 
+
+class SeleniumTest(StaticLiveServerTestCase):
+    date = datetime.strptime('2018-12-22', '%Y-%m-%d').astimezone(timezone.utc)
+
+    def test(self):
+        start_airport = Airport.objects.create(city='Warsaw', country='Poland')
+        final_airport = Airport.objects.create(city='Cracow', country='Poland')
+        driver = WebDriver()
+        for i in range(3):
+            airplane = Airplane.objects.create(official_number=i, capacity=3)
+            airplane.save()
+            crew = Crew.objects.create(captainsName='Name{}'.format(i), captainsSurname='Surname{}'.format(i))
+            crew.save()
+            flight = Flight.objects.create(start_airport=start_airport, final_airport=final_airport, crew=crew,
+                                           airplane=airplane, departure_time=self.date,
+                                           arrival_time=self.date + timedelta(hours=4))
+            flight.save()
+
+        user = User.objects.create(username="username")
+        user.set_password("password")
+        user.save()
+
+        # Try to create new crew without logging in
+        driver.get("{}/static/crews.html".format(self.live_server_url))
+        driver.find_element_by_id("captainsName").send_keys("Name")
+        driver.find_element_by_id("captainsSurname").send_keys("Surname")
+        driver.find_element_by_id("post_crew_button").click()
+
+        alert = driver.switch_to.alert
+        alert_text = "You need to bo logged in to create new crew. Head to localhost:8000/auth/login."
+        self.assertEqual(alert.text, alert_text)
+        alert.accept()
+
+        # Logging in
+        driver.get("{}/".format(self.live_server_url))
+        driver.find_element_by_id("login_link").click()
+        driver.find_element_by_id("login_username").send_keys("username")
+        driver.find_element_by_id("login_password").send_keys("password")
+        driver.find_element_by_id("login_button").click()
+
+        # Create new crew after logging in
+        driver.get("{}/static/crews.html".format(self.live_server_url))
+        driver.find_element_by_id("captainsName").send_keys("Name")
+        driver.find_element_by_id("captainsSurname").send_keys("Surname")
+        driver.find_element_by_id("post_crew_button").click()
+
+        alert = driver.switch_to.alert
+        alert_text = "New crew added!"
+        self.assertEqual(alert.text, alert_text)
