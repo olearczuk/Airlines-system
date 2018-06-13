@@ -171,7 +171,7 @@ function postCrew() {
 					let select = document.getElementById("select" + flight.id);
 					select.appendChild(newOption);
 				}
-				alert("New cre added!");
+				alert("New crew added!");
 			}
 			document.getElementById("captainsName").value = "";
 			document.getElementById("captainsSurname").value = "";

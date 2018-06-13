@@ -82,8 +82,9 @@ class Flight(models.Model):
         )
         if other_flights.filter(airplane=self.airplane).exists():
             raise ValidationError('This flights airplane is currently busy')
-        if other_flights.filter(crew=self.crew).exists():
-            raise ValidationError('This flights crew is currently busy')
+        if self.crew is not None:
+            if other_flights.filter(crew=self.crew).exists():
+                raise ValidationError('This flights crew is currently busy')
 
     def __str__(self):
         return 'Flight %s -> %s' % (self.start_airport, self.final_airport)
