@@ -1,11 +1,15 @@
+"""Views module"""
 from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.response import Response
-from .serializers import *
 from django.core.exceptions import ValidationError
+from system.flights.models import Flight, Airplane, Airport, Crew
+from system.api.serializers import FlightSerializer, AirplaneSerializer, \
+    AirportSerializer, CrewSerializer
 
 
-class FlightViewSet(viewsets.ModelViewSet):
+class FlightViewSet(viewsets.ModelViewSet): # pylint: disable=too-many-ancestors
+    """FlightViewSet"""
     queryset = Flight.objects.order_by("-departure_time")
     serializer_class = FlightSerializer
 
@@ -27,17 +31,20 @@ class FlightViewSet(viewsets.ModelViewSet):
         return Response(serializer.data)
 
 
-class AirportViewSet(viewsets.ModelViewSet):
+class AirportViewSet(viewsets.ModelViewSet): # pylint: disable=too-many-ancestors
+    """AirportViewSet"""
     queryset = Airport.objects.all()
     serializer_class = AirportSerializer
 
 
-class AirplaneViewSet(viewsets.ModelViewSet):
+class AirplaneViewSet(viewsets.ModelViewSet): # pylint: disable=too-many-ancestors
+    """AirplaneViewSet"""
     queryset = Airplane.objects.all()
     serializer_class = AirplaneSerializer
 
 
-class CrewViewSet(viewsets.ModelViewSet):
+class CrewViewSet(viewsets.ModelViewSet): # pylint: disable=too-many-ancestors
+    """CrewViewSet"""
     queryset = Crew.objects.all()
     serializer_class = CrewSerializer
 

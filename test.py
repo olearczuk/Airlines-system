@@ -1,4 +1,3 @@
-# from django.core.serializers import json
 import json
 from django.test import TestCase, Client
 from system.flights.models import Flight, Airplane, Crew, Airport

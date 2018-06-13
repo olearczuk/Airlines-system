@@ -2,12 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Crew Manager</title>
+    <title>Crew</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="crews_script.js"></script>
 </head>
 <body>
-	captain's name: <br> <input type="text" id="captainsName"> <br>
-	captain's surname: <br> <input id='captainsSurname' type="text"> <br><br>
-	<button v-on:click='submit'>Submit</button>
-	
+    <a href="/">Main page</a>
+    <br><br>
+    captain's name: <br> <input type="text" id="captainsName"> <br>
+    captain's surname: <br> <input type="text" id="captainsSurname"> <br><br>
+    <button onClick="postCrew()">Submit</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Flight</th>
+                <th><span style="color:red">&#9992;</span> nr</th>
+                <th>Departure time</th>
+                <th>Arrival time</th>
+                <th>Current crew</th>
+                <th>Change crew</th>
+            </tr>
+        </thead>
+        <tbody id="flights">
+        </tbody>
+    </table>
+</div>
 </body>
+</html>
