@@ -954,3 +954,1278 @@ JavaScript error: http://localhost:36427/static/crews.html, line 1: ReferenceErr
 1528899100967	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:41689/flights/flights_list/"
 1528899101104	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:41689/static/crews.html"
 1528899101180	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:41689/static/crews.html"
+1529154860662	geckodriver	INFO	geckodriver 0.20.1
+1529154860685	geckodriver	INFO	Listening on 127.0.0.1:44675
+1529154862103	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Jf4MKGNMd3EV"
+1529154863324	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529154864034	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529154864039	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529154864555	Marionette	INFO	Enabled via --marionette
+1529154869403	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529154870293	Marionette	INFO	Listening on port 41561
+1529154870340	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529154870679	Marionette	DEBUG	Register listener.js for window 2147483649
+1529154872007	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529154872115	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529154872116	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529154872352	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:40127/static/crews.html"
+1529154872536	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:40127/static/crews.html"
+1529154873473	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:40127/static/crews.html"
+1529154873778	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:40127/static/crews.html"
+1529154873783	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:40127/static/crews.html"
+1529154873807	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:40127/flights/flights_list/"
+1529154873935	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:40127/flights/flights_list/"
+1529154874064	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:40127/flights/flights_list/"
+1529154874130	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:40127/flights/flights_list/"
+1529154874132	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:40127/flights/flights_list/"
+1529154874190	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:40127/auth/login/"
+1529154874218	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:40127/auth/login/"
+
+(/usr/lib64/firefox/firefox:8708): dconf-WARNING **: Unable to open /var/lib/flatpak/exports/share/dconf/profile/user: Permission denied
+1529154874717	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:40127/auth/login/"
+1529154875456	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:40127/auth/login/"
+1529154875459	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:40127/auth/login/"
+1529154875493	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:40127/flights/flights_list/"
+1529154875557	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:40127/flights/flights_list/"
+1529154875634	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:40127/flights/flights_list/"
+1529154875688	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:40127/flights/flights_list/"
+1529154875689	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:40127/flights/flights_list/"
+1529154875791	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:40127/static/crews.html"
+1529154875859	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:40127/static/crews.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529228771922	geckodriver	INFO	geckodriver 0.20.1
+1529228771951	geckodriver	INFO	Listening on 127.0.0.1:54595
+1529228773268	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.xmoZofQnBqGJ"
+1529228774718	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529228775428	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529228775432	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529228775992	Marionette	INFO	Enabled via --marionette
+1529228780954	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529228781899	Marionette	INFO	Listening on port 41105
+1529228782020	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529228782353	Marionette	DEBUG	Register listener.js for window 2147483649
+1529228783566	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529228783668	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529228783669	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529228783881	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:56717/static/crews.html"
+1529228784085	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:56717/static/crews.html"
+1529228784975	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:56717/static/crews.html"
+1529228785276	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:56717/static/crews.html"
+1529228785278	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:56717/static/crews.html"
+1529228785390	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:56717/flights/flights_list/"
+1529228785399	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:56717/flights/flights_list/"
+1529228785536	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:56717/flights/flights_list/"
+1529228785586	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:56717/flights/flights_list/"
+1529228785588	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:56717/flights/flights_list/"
+1529228785637	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:56717/auth/login/"
+1529228785643	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:56717/auth/login/"
+
+(/usr/lib64/firefox/firefox:13094): dconf-WARNING **: Unable to open /var/lib/flatpak/exports/share/dconf/profile/user: Permission denied
+1529228786068	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:56717/auth/login/"
+1529228786798	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:56717/auth/login/"
+1529228786799	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:56717/auth/login/"
+1529228786848	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:56717/flights/flights_list/"
+1529228786855	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:56717/flights/flights_list/"
+1529228786971	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:56717/flights/flights_list/"
+1529228786991	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:56717/flights/flights_list/"
+1529228786992	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:56717/flights/flights_list/"
+1529228787089	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:56717/static/crews.html"
+1529228787148	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:56717/static/crews.html"
+1529228836808	geckodriver	INFO	geckodriver 0.20.1
+1529228836831	geckodriver	INFO	Listening on 127.0.0.1:39645
+1529228838086	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.412QrZy7pk8C"
+1529228839381	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529228840075	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529228840079	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529228840579	Marionette	INFO	Enabled via --marionette
+1529228845768	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529228846782	Marionette	INFO	Listening on port 46849
+1529228846835	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529228847166	Marionette	DEBUG	Register listener.js for window 2147483649
+1529228848493	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529228848922	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529228848924	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529228848972	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:58571/flights/flights_list/"
+1529228849166	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:58571/flights/flights_list/"
+1529228849431	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:58571/flights/flights_list/"
+1529228849514	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:58571/flights/flights_list/"
+1529228849515	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:58571/flights/flights_list/"
+1529228849575	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:58571/auth/login/"
+1529228849595	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:58571/auth/login/"
+1529228850151	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:58571/auth/login/"
+1529228851102	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:58571/auth/login/"
+1529228851105	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:58571/auth/login/"
+1529228851149	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:58571/flights/flights_list/"
+1529228851157	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:58571/flights/flights_list/"
+1529228851260	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:58571/flights/flights_list/"
+1529228851310	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:58571/flights/flights_list/"
+1529228851311	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:58571/flights/flights_list/"
+1529228851468	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:58571/static/crews.html"
+1529228851605	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:58571/static/crews.html"
+1529228852822	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529228889641	geckodriver	INFO	geckodriver 0.20.1
+1529228889660	geckodriver	INFO	Listening on 127.0.0.1:59631
+1529228890903	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.LrqQJLlzYILJ"
+1529228892004	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529228892678	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529228892683	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529228893186	Marionette	INFO	Enabled via --marionette
+1529228898017	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529228898969	Marionette	INFO	Listening on port 36385
+1529228899783	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529228900114	Marionette	DEBUG	Register listener.js for window 2147483649
+1529228900813	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529228901123	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529228901124	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529228901267	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:40953/flights/flights_list/"
+1529228901278	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:40953/flights/flights_list/"
+1529228901504	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:40953/flights/flights_list/"
+1529228901578	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:40953/flights/flights_list/"
+1529228901579	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:40953/flights/flights_list/"
+1529228901642	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:40953/auth/login/"
+1529228901657	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:40953/auth/login/"
+1529228901946	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:40953/auth/login/"
+1529228902640	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:40953/auth/login/"
+1529228902643	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:40953/auth/login/"
+1529228902691	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:40953/flights/flights_list/"
+1529228902698	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:40953/flights/flights_list/"
+1529228902817	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:40953/flights/flights_list/"
+1529228902864	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:40953/flights/flights_list/"
+1529228902865	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:40953/flights/flights_list/"
+1529228903010	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:40953/static/crews.html"
+1529228903114	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:40953/static/crews.html"
+1529228904363	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529228904624	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529228937857	geckodriver	INFO	geckodriver 0.20.1
+1529228937890	geckodriver	INFO	Listening on 127.0.0.1:54245
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529228939397	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.kSDT0EES8RyW"
+1529228940875	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529228941575	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529228941579	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529228942085	Marionette	INFO	Enabled via --marionette
+1529228946841	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529228947779	Marionette	INFO	Listening on port 45451
+1529228947823	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529228948157	Marionette	DEBUG	Register listener.js for window 2147483649
+1529228949398	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529228949812	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529228949813	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529228949846	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:60625/flights/flights_list/"
+1529228949992	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:60625/flights/flights_list/"
+1529228950184	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:60625/flights/flights_list/"
+1529228950259	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:60625/flights/flights_list/"
+1529228950260	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:60625/flights/flights_list/"
+1529228950330	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:60625/auth/login/"
+1529228950337	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:60625/auth/login/"
+1529228950682	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:60625/auth/login/"
+1529228951367	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:60625/auth/login/"
+1529228951369	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:60625/auth/login/"
+1529228951419	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:60625/flights/flights_list/"
+1529228951427	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:60625/flights/flights_list/"
+1529228951555	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:60625/flights/flights_list/"
+1529228951601	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:60625/flights/flights_list/"
+1529228951602	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:60625/flights/flights_list/"
+1529228951751	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:60625/static/crews.html"
+1529228951860	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:60625/static/crews.html"
+1529228953082	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529229103853	geckodriver	INFO	geckodriver 0.20.1
+1529229103879	geckodriver	INFO	Listening on 127.0.0.1:36629
+1529229105209	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.jNSEH7fZoG0M"
+1529229106755	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529229107648	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529229107654	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529229108291	Marionette	INFO	Enabled via --marionette
+1529229114895	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529229116162	Marionette	INFO	Listening on port 35737
+1529229116284	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529229116745	Marionette	DEBUG	Register listener.js for window 2147483649
+1529229118350	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529229119058	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529229119060	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529229119105	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:56763/flights/flights_list/"
+1529229119297	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:56763/flights/flights_list/"
+1529229119665	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:56763/flights/flights_list/"
+1529229119818	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:56763/flights/flights_list/"
+1529229119825	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:56763/flights/flights_list/"
+1529229119884	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:56763/auth/login/"
+1529229119994	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:56763/auth/login/"
+
+(/usr/lib64/firefox/firefox:14282): dconf-WARNING **: Unable to open /var/lib/flatpak/exports/share/dconf/profile/user: Permission denied
+1529229120945	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:56763/auth/login/"
+1529229121688	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:56763/auth/login/"
+1529229121691	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:56763/auth/login/"
+1529229121719	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:56763/flights/flights_list/"
+1529229121787	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:56763/flights/flights_list/"
+1529229121841	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:56763/flights/flights_list/"
+1529229121896	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:56763/flights/flights_list/"
+1529229121897	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:56763/flights/flights_list/"
+1529229122030	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:56763/static/crews.html"
+1529229122127	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:56763/static/crews.html"
+1529229123452	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529229151365	geckodriver	INFO	geckodriver 0.20.1
+1529229151385	geckodriver	INFO	Listening on 127.0.0.1:42261
+1529229152707	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.6Y0HBNAqpY6i"
+1529229154243	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529229155109	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529229155114	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529229155732	Marionette	INFO	Enabled via --marionette
+1529229162109	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529229164883	Marionette	INFO	Listening on port 37563
+1529229164956	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529229165400	Marionette	DEBUG	Register listener.js for window 2147483649
+1529229166478	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529229167072	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529229167074	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529229167364	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:58393/flights/flights_list/"
+1529229167380	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:58393/flights/flights_list/"
+1529229167824	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:58393/flights/flights_list/"
+1529229167940	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:58393/flights/flights_list/"
+1529229167942	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:58393/flights/flights_list/"
+1529229168032	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:58393/auth/login/"
+1529229168041	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:58393/auth/login/"
+1529229168776	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:58393/auth/login/"
+1529229169820	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:58393/auth/login/"
+1529229169830	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:58393/auth/login/"
+1529229169901	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:58393/flights/flights_list/"
+1529229170004	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:58393/flights/flights_list/"
+1529229170097	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:58393/flights/flights_list/"
+1529229170167	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:58393/flights/flights_list/"
+1529229170168	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:58393/flights/flights_list/"
+1529229170447	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:58393/static/crews.html"
+1529229170461	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:58393/static/crews.html"
+1529229171903	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529229195771	geckodriver	INFO	geckodriver 0.20.1
+1529229195797	geckodriver	INFO	Listening on 127.0.0.1:53715
+1529229197112	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.npmWyKtiTWui"
+1529229198406	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529229199257	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529229199262	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529229199837	Marionette	INFO	Enabled via --marionette
+1529229205663	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529229208184	Marionette	INFO	Listening on port 37575
+1529229208223	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529229208590	Marionette	DEBUG	Register listener.js for window 2147483649
+1529229209604	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529229210076	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529229210077	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529229210134	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:39659/flights/flights_list/"
+1529229210266	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:39659/flights/flights_list/"
+1529229210851	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:39659/flights/flights_list/"
+1529229210992	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:39659/flights/flights_list/"
+1529229210994	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:39659/flights/flights_list/"
+1529229211121	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:39659/auth/login/"
+1529229211131	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:39659/auth/login/"
+
+(/usr/lib64/firefox/firefox:14774): dconf-WARNING **: Unable to open /var/lib/flatpak/exports/share/dconf/profile/user: Permission denied
+1529229211738	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:39659/auth/login/"
+1529229212762	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:39659/auth/login/"
+1529229212765	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:39659/auth/login/"
+1529229212826	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:39659/flights/flights_list/"
+1529229212852	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:39659/flights/flights_list/"
+1529229212989	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:39659/flights/flights_list/"
+1529229213055	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:39659/flights/flights_list/"
+1529229213056	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:39659/flights/flights_list/"
+1529229213201	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:39659/static/crews.html"
+1529229213342	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:39659/static/crews.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529229239108	geckodriver	INFO	geckodriver 0.20.1
+1529229239130	geckodriver	INFO	Listening on 127.0.0.1:37013
+1529229240376	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.kyuqLwXsh5DL"
+1529229241654	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529229242478	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529229242485	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529229243084	Marionette	INFO	Enabled via --marionette
+1529229248151	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529229249056	Marionette	INFO	Listening on port 43055
+1529229249176	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529229249499	Marionette	DEBUG	Register listener.js for window 2147483649
+1529229250818	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529229251382	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529229251383	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529229251553	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:36367/flights/flights_list/"
+1529229251715	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:36367/flights/flights_list/"
+1529229251994	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:36367/flights/flights_list/"
+1529229252096	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:36367/flights/flights_list/"
+1529229252098	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:36367/flights/flights_list/"
+1529229252168	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:36367/auth/login/"
+1529229252173	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:36367/auth/login/"
+
+(/usr/lib64/firefox/firefox:15008): dconf-WARNING **: Unable to open /var/lib/flatpak/exports/share/dconf/profile/user: Permission denied
+1529229252853	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:36367/auth/login/"
+1529229253664	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:36367/auth/login/"
+1529229253668	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:36367/auth/login/"
+1529229253708	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:36367/flights/flights_list/"
+1529229253736	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:36367/flights/flights_list/"
+1529229253852	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:36367/flights/flights_list/"
+1529229253921	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:36367/flights/flights_list/"
+1529229253922	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:36367/flights/flights_list/"
+1529229254093	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:36367/static/crews.html"
+1529229254131	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:36367/static/crews.html"
+1529229255394	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529229255688	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529229362557	geckodriver	INFO	geckodriver 0.20.1
+1529229362582	geckodriver	INFO	Listening on 127.0.0.1:55125
+1529229363829	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.JCV4vK8oEaAK"
+1529229364972	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529229365654	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529229365659	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529229366158	Marionette	INFO	Enabled via --marionette
+1529229370846	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529229371701	Marionette	INFO	Listening on port 38067
+1529229371792	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529229372126	Marionette	DEBUG	Register listener.js for window 2147483649
+1529229373525	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529229373896	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529229373897	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529229373926	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:59883/flights/flights_list/"
+1529229374093	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:59883/flights/flights_list/"
+1529229374336	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:59883/flights/flights_list/"
+1529229374422	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:59883/flights/flights_list/"
+1529229374424	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:59883/flights/flights_list/"
+1529229374480	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:59883/auth/login/"
+1529229374486	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:59883/auth/login/"
+1529229375007	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:59883/auth/login/"
+1529229375744	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:59883/auth/login/"
+1529229375750	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:59883/auth/login/"
+1529229375774	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:59883/flights/flights_list/"
+1529229375805	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:59883/flights/flights_list/"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529229428796	geckodriver	INFO	geckodriver 0.20.1
+1529229428821	geckodriver	INFO	Listening on 127.0.0.1:49493
+1529229430041	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.fg9ke5SnQrov"
+1529229431194	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529229431896	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529229431902	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529229432388	Marionette	INFO	Enabled via --marionette
+1529229437088	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529229437980	Marionette	INFO	Listening on port 40431
+1529229438139	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529229438463	Marionette	DEBUG	Register listener.js for window 2147483649
+1529229439787	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529229440126	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529229440130	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529229440162	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:49249/flights/flights_list/"
+1529229440283	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:49249/flights/flights_list/"
+1529229440584	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:49249/flights/flights_list/"
+1529229440679	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:49249/flights/flights_list/"
+1529229440683	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:49249/flights/flights_list/"
+1529229440760	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:49249/auth/login/"
+1529229440770	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:49249/auth/login/"
+1529229441204	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:49249/auth/login/"
+1529229441956	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:49249/auth/login/"
+1529229441959	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:49249/auth/login/"
+1529229441990	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:49249/flights/flights_list/"
+1529229442039	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:49249/flights/flights_list/"
+1529229442141	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:49249/flights/flights_list/"
+1529229442186	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:49249/flights/flights_list/"
+1529229442187	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:49249/flights/flights_list/"
+1529229442341	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:49249/static/crews.html"
+1529229442456	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:49249/static/crews.html"
+1529229525331	geckodriver	INFO	geckodriver 0.20.1
+1529229525351	geckodriver	INFO	Listening on 127.0.0.1:58603
+1529229526563	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.mnV1ANlWUCW5"
+1529229527666	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529229528382	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529229528388	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529229528872	Marionette	INFO	Enabled via --marionette
+1529229533581	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529229534445	Marionette	INFO	Listening on port 32925
+1529229534493	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529229534818	Marionette	DEBUG	Register listener.js for window 2147483649
+1529229536209	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529229536589	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529229536590	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529229536729	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:39247/flights/flights_list/"
+1529229536740	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:39247/flights/flights_list/"
+1529229537043	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:39247/flights/flights_list/"
+1529229537135	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:39247/flights/flights_list/"
+1529229537139	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:39247/flights/flights_list/"
+1529229537198	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:39247/auth/login/"
+1529229537217	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:39247/auth/login/"
+
+(/usr/lib64/firefox/firefox:15856): dconf-WARNING **: Unable to open /var/lib/flatpak/exports/share/dconf/profile/user: Permission denied
+1529229537736	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:39247/auth/login/"
+1529229538477	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:39247/auth/login/"
+1529229538480	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:39247/auth/login/"
+1529229538508	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:39247/flights/flights_list/"
+1529229538549	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:39247/flights/flights_list/"
+1529229538648	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:39247/flights/flights_list/"
+1529229538693	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:39247/flights/flights_list/"
+1529229538694	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:39247/flights/flights_list/"
+1529229538896	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:39247/static/crews.html"
+1529229538953	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:39247/static/crews.html"
+1529229623990	geckodriver	INFO	geckodriver 0.20.1
+1529229624018	geckodriver	INFO	Listening on 127.0.0.1:59231
+1529229625231	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.haW7PahuP9DP"
+1529229626366	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529229627049	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529229627053	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529229627544	Marionette	INFO	Enabled via --marionette
+1529229632212	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529229634268	Marionette	INFO	Listening on port 41049
+1529229634365	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529229634707	Marionette	DEBUG	Register listener.js for window 2147483649
+1529229635414	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529229635669	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529229635670	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529229635700	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:42929/flights/flights_list/"
+1529229635845	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:42929/flights/flights_list/"
+1529229636147	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:42929/flights/flights_list/"
+1529229636214	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:42929/flights/flights_list/"
+1529229636218	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:42929/flights/flights_list/"
+1529229636284	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:42929/auth/login/"
+1529229636300	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:42929/auth/login/"
+
+(/usr/lib64/firefox/firefox:16145): dconf-WARNING **: Unable to open /var/lib/flatpak/exports/share/dconf/profile/user: Permission denied
+1529229636993	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:42929/auth/login/"
+1529229637696	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:42929/auth/login/"
+1529229637699	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:42929/auth/login/"
+1529229637749	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:42929/flights/flights_list/"
+1529229637756	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:42929/flights/flights_list/"
+1529229637871	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:42929/flights/flights_list/"
+1529229637921	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:42929/flights/flights_list/"
+1529229637925	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:42929/flights/flights_list/"
+1529229638052	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:42929/static/crews.html"
+1529229638151	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:42929/static/crews.html"
+1529229714273	geckodriver	INFO	geckodriver 0.20.1
+1529229714293	geckodriver	INFO	Listening on 127.0.0.1:38223
+1529229715511	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.ulSXI2X9KYZy"
+1529229716697	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529229717446	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529229717450	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529229717960	Marionette	INFO	Enabled via --marionette
+1529229722990	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529229723823	Marionette	INFO	Listening on port 35427
+1529229723899	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529229724219	Marionette	DEBUG	Register listener.js for window 2147483649
+1529229725719	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529229726142	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529229726145	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529229726188	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:57539/flights/flights_list/"
+1529229726347	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:57539/flights/flights_list/"
+1529229726639	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:57539/flights/flights_list/"
+1529229726720	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:57539/flights/flights_list/"
+1529229726723	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:57539/flights/flights_list/"
+1529229726786	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:57539/auth/login/"
+1529229726792	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:57539/auth/login/"
+1529229727373	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:57539/auth/login/"
+1529229728042	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:57539/auth/login/"
+1529229728045	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:57539/auth/login/"
+1529229728087	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:57539/flights/flights_list/"
+1529229728095	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:57539/flights/flights_list/"
+1529229728230	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:57539/flights/flights_list/"
+1529229728332	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:57539/flights/flights_list/"
+1529229728333	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:57539/flights/flights_list/"
+1529229728468	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:57539/static/crews.html"
+1529229728583	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:57539/static/crews.html"
+1529229769211	geckodriver	INFO	geckodriver 0.20.1
+1529229769317	geckodriver	INFO	Listening on 127.0.0.1:35901
+1529229770669	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.uXdZ64j68r4G"
+1529229773291	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529229774088	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529229774095	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529229774688	Marionette	INFO	Enabled via --marionette
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529229806683	geckodriver	INFO	geckodriver 0.20.1
+1529229806713	geckodriver	INFO	Listening on 127.0.0.1:37363
+1529229807927	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.BVDtsFDAPuSV"
+1529229809044	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529229809746	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529229809752	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529229810230	Marionette	INFO	Enabled via --marionette
+1529229815975	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529229817003	Marionette	INFO	Listening on port 42857
+1529229817108	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529229817447	Marionette	DEBUG	Register listener.js for window 2147483649
+1529229818153	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529229818466	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529229818467	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529229818492	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:36753/flights/flights_list/"
+1529229818665	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:36753/flights/flights_list/"
+1529229818849	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:36753/flights/flights_list/"
+1529229818913	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:36753/flights/flights_list/"
+1529229818914	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:36753/flights/flights_list/"
+1529229818969	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:36753/auth/login/"
+1529229818983	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:36753/auth/login/"
+1529229819398	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:36753/auth/login/"
+1529229820167	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:36753/auth/login/"
+1529229820169	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:36753/auth/login/"
+1529229820206	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:36753/flights/flights_list/"
+1529229820252	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:36753/flights/flights_list/"
+1529229820396	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:36753/flights/flights_list/"
+1529229820447	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:36753/flights/flights_list/"
+1529229820448	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:36753/flights/flights_list/"
+1529229820580	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:36753/static/crews.html"
+1529229820686	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:36753/static/crews.html"
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+1529230017712	geckodriver	INFO	geckodriver 0.20.1
+1529230017737	geckodriver	INFO	Listening on 127.0.0.1:59243
+1529230018978	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.1H0YkuEq5DgK"
+1529230020112	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529230020790	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529230020795	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529230021312	Marionette	INFO	Enabled via --marionette
+1529230026007	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529230026889	Marionette	INFO	Listening on port 45055
+1529230027785	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529230028147	Marionette	DEBUG	Register listener.js for window 2147483649
+1529230028932	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529230030229	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529230030230	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529230030258	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:40251/flights/flights_list/"
+1529230030456	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:40251/flights/flights_list/"
+1529230030955	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:40251/flights/flights_list/"
+1529230031195	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:40251/flights/flights_list/"
+1529230031198	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:40251/flights/flights_list/"
+1529230031286	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:40251/auth/login/"
+1529230031295	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:40251/auth/login/"
+
+(/usr/lib64/firefox/firefox:17366): dconf-WARNING **: Unable to open /var/lib/flatpak/exports/share/dconf/profile/user: Permission denied
+1529230034463	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:40251/auth/login/"
+1529230035409	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:40251/auth/login/"
+1529230035410	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:40251/auth/login/"
+1529230035473	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:40251/flights/flights_list/"
+1529230035483	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:40251/flights/flights_list/"
+1529230035792	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:40251/flights/flights_list/"
+1529230035993	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:40251/flights/flights_list/"
+1529230035993	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:40251/flights/flights_list/"
+1529230036433	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:40251/static/crews.html"
+1529230036520	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:40251/static/crews.html"
+1529230176916	geckodriver	INFO	geckodriver 0.20.1
+1529230176942	geckodriver	INFO	Listening on 127.0.0.1:33283
+1529230178178	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.w9gN7PFwiKg9"
+1529230179281	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529230179983	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529230179987	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529230180464	Marionette	INFO	Enabled via --marionette
+1529230185143	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529230185989	Marionette	INFO	Listening on port 33701
+1529230186940	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529230187278	Marionette	DEBUG	Register listener.js for window 2147483649
+1529230187995	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529230188318	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529230188321	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529230188481	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:58751/flights/flights_list/"
+1529230188493	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:58751/flights/flights_list/"
+1529230188760	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:58751/flights/flights_list/"
+1529230188826	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:58751/flights/flights_list/"
+1529230188828	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:58751/flights/flights_list/"
+1529230188887	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:58751/auth/login/"
+1529230188896	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:58751/auth/login/"
+1529230189220	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:58751/auth/login/"
+1529230189990	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:58751/auth/login/"
+1529230189992	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:58751/auth/login/"
+1529230190050	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:58751/flights/flights_list/"
+1529230190058	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:58751/flights/flights_list/"
+1529230190161	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:58751/flights/flights_list/"
+1529230190216	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:58751/flights/flights_list/"
+1529230190216	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:58751/flights/flights_list/"
+1529230190348	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:58751/static/crews.html"
+1529230190471	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:58751/static/crews.html"
+1529230421149	geckodriver	INFO	geckodriver 0.20.1
+1529230421165	geckodriver	INFO	Listening on 127.0.0.1:58165
+1529230422417	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.BttICjE4LWXC"
+1529230423514	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529230424215	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529230424220	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529230424701	Marionette	INFO	Enabled via --marionette
+1529230429387	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529230430255	Marionette	INFO	Listening on port 34375
+1529230430396	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529230430749	Marionette	DEBUG	Register listener.js for window 2147483649
+1529230432092	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529230432474	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529230432476	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529230432511	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:38695/flights/flights_list/"
+1529230432693	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:38695/flights/flights_list/"
+1529230432992	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:38695/flights/flights_list/"
+1529230433072	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:38695/flights/flights_list/"
+1529230433076	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:38695/flights/flights_list/"
+1529230433142	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:38695/auth/login/"
+1529230433148	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:38695/auth/login/"
+
+(/usr/lib64/firefox/firefox:18125): dconf-WARNING **: Unable to open /var/lib/flatpak/exports/share/dconf/profile/user: Permission denied
+1529230433618	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:38695/auth/login/"
+1529230434375	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:38695/auth/login/"
+1529230434377	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:38695/auth/login/"
+1529230434417	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:38695/flights/flights_list/"
+1529230434425	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:38695/flights/flights_list/"
+1529230434543	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:38695/flights/flights_list/"
+1529230434593	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:38695/flights/flights_list/"
+1529230434594	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:38695/flights/flights_list/"
+1529230434807	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:38695/static/crews.html"
+1529230434844	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:38695/static/crews.html"
+1529230468938	geckodriver	INFO	geckodriver 0.20.1
+1529230468959	geckodriver	INFO	Listening on 127.0.0.1:47777
+1529230470173	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.9GDvlULktkqu"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529230471867	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529230472651	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529230472657	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529230473146	Marionette	INFO	Enabled via --marionette
+1529230477865	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529230478719	Marionette	INFO	Listening on port 34477
+1529230478853	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529230479214	Marionette	DEBUG	Register listener.js for window 2147483649
+1529230480605	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529230481051	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529230481053	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529230481215	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:41685/flights/flights_list/"
+1529230481227	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:41685/flights/flights_list/"
+1529230481477	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:41685/flights/flights_list/"
+1529230481571	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:41685/flights/flights_list/"
+1529230481573	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:41685/flights/flights_list/"
+1529230481633	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:41685/auth/login/"
+1529230481680	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:41685/auth/login/"
+1529230482049	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:41685/auth/login/"
+1529230482743	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:41685/auth/login/"
+1529230482745	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:41685/auth/login/"
+1529230482805	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:41685/flights/flights_list/"
+1529230482812	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:41685/flights/flights_list/"
+1529230482942	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:41685/flights/flights_list/"
+1529230482997	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:41685/flights/flights_list/"
+1529230482999	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:41685/flights/flights_list/"
+1529230483145	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:41685/static/crews.html"
+1529230483254	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:41685/static/crews.html"
+1529230484421	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529230689536	geckodriver	INFO	geckodriver 0.20.1
+1529230689563	geckodriver	INFO	Listening on 127.0.0.1:50367
+1529230690816	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Zc2I45s6lnGu"
+1529230692374	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529230693403	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529230693411	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529230693982	Marionette	INFO	Enabled via --marionette
+[Child 18793, Chrome_ChildThread] WARNING: pipe error (22): Connection reset by peer: file /builddir/build/BUILD/firefox-57.0b12/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 18793, Chrome_ChildThread] WARNING: pipe error (21): Connection reset by peer: file /builddir/build/BUILD/firefox-57.0b12/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 18793, Chrome_ChildThread] WARNING: pipe error (19): Connection reset by peer: file /builddir/build/BUILD/firefox-57.0b12/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 18793, Chrome_ChildThread] WARNING: pipe error (18): Connection reset by peer: file /builddir/build/BUILD/firefox-57.0b12/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[Child 18793, Chrome_ChildThread] WARNING: pipe error (14): Connection reset by peer: file /builddir/build/BUILD/firefox-57.0b12/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1529230831639	geckodriver	INFO	geckodriver 0.20.1
+1529230831666	geckodriver	INFO	Listening on 127.0.0.1:38429
+1529230832982	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.32gmK68ahm6F"
+1529230834396	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529230835115	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529230835120	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529230835695	Marionette	INFO	Enabled via --marionette
+1529230840751	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529230841707	Marionette	INFO	Listening on port 35207
+1529230841866	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529230842202	Marionette	DEBUG	Register listener.js for window 2147483649
+1529230843533	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529230843952	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529230843953	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529230843980	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:44269/flights/flights_list/"
+1529230844218	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:44269/flights/flights_list/"
+1529230844464	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:44269/flights/flights_list/"
+1529230844552	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:44269/flights/flights_list/"
+1529230844556	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:44269/flights/flights_list/"
+1529230844615	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:44269/auth/login/"
+1529230844631	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:44269/auth/login/"
+
+(/usr/lib64/firefox/firefox:19152): dconf-WARNING **: Unable to open /var/lib/flatpak/exports/share/dconf/profile/user: Permission denied
+1529230845422	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:44269/auth/login/"
+1529230846148	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:44269/auth/login/"
+1529230846151	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:44269/auth/login/"
+1529230846177	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:44269/flights/flights_list/"
+1529230846261	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:44269/flights/flights_list/"
+1529230846307	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:44269/flights/flights_list/"
+1529230846372	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:44269/flights/flights_list/"
+1529230846372	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:44269/flights/flights_list/"
+1529230846518	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:44269/static/crews.html"
+1529230846639	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:44269/static/crews.html"
+1529230847864	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529230848137	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529230951210	geckodriver	INFO	geckodriver 0.20.1
+1529230951239	geckodriver	INFO	Listening on 127.0.0.1:37603
+1529230952832	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.5ShPU9ttkdc4"
+1529230956508	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529230957912	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529230957921	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529230959089	Marionette	INFO	Enabled via --marionette
+1529230979216	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529230981944	Marionette	INFO	Listening on port 46171
+1529230983404	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529230984113	Marionette	DEBUG	Register listener.js for window 2147483649
+1529230985436	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529230986846	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529230986847	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529230987254	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:40685/flights/flights_list/"
+1529230987262	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:40685/flights/flights_list/"
+1529230987841	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:40685/flights/flights_list/"
+1529230988020	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:40685/flights/flights_list/"
+1529230988022	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:40685/flights/flights_list/"
+1529230988232	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:40685/auth/login/"
+1529230988240	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:40685/auth/login/"
+1529230988848	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:40685/auth/login/"
+1529230990239	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:40685/auth/login/"
+1529230990242	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:40685/auth/login/"
+1529230990385	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:40685/flights/flights_list/"
+1529230990403	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:40685/flights/flights_list/"
+1529230990569	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:40685/flights/flights_list/"
+1529230990667	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:40685/flights/flights_list/"
+1529230990668	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:40685/flights/flights_list/"
+1529230990999	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:40685/static/crews.html"
+1529230991283	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:40685/static/crews.html"
+1529230992346	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529230993121	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529230993395	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529231077586	geckodriver	INFO	geckodriver 0.20.1
+1529231077665	geckodriver	INFO	Listening on 127.0.0.1:47817
+1529231079220	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.bF4mUPf16CYC"
+1529231080934	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231081973	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529231081979	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529231082814	Marionette	INFO	Enabled via --marionette
+1529231088725	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231089653	Marionette	INFO	Listening on port 34949
+1529231090568	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529231090911	Marionette	DEBUG	Register listener.js for window 2147483649
+1529231091670	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529231092075	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529231092077	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529231092125	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:55315/flights/flights_list/"
+1529231092396	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:55315/flights/flights_list/"
+1529231092691	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:55315/flights/flights_list/"
+1529231092847	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:55315/flights/flights_list/"
+1529231092856	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:55315/flights/flights_list/"
+1529231092986	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:55315/auth/login/"
+1529231092998	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:55315/auth/login/"
+1529231093619	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:55315/auth/login/"
+1529231094329	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:55315/auth/login/"
+1529231094331	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:55315/auth/login/"
+1529231094382	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:55315/flights/flights_list/"
+1529231094394	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:55315/flights/flights_list/"
+1529231094511	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:55315/flights/flights_list/"
+1529231094575	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:55315/flights/flights_list/"
+1529231094576	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:55315/flights/flights_list/"
+1529231094728	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:55315/static/crews.html"
+1529231094837	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:55315/static/crews.html"
+1529231096187	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529231096453	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529231196217	geckodriver	INFO	geckodriver 0.20.1
+1529231196240	geckodriver	INFO	Listening on 127.0.0.1:46659
+1529231197590	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.cOnVJWjdYXsM"
+1529231206813	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231207643	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529231207651	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529231208283	Marionette	INFO	Enabled via --marionette
+1529231214408	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231217224	Marionette	INFO	Listening on port 39453
+1529231217418	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529231217966	Marionette	DEBUG	Register listener.js for window 2147483649
+1529231218824	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529231219257	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529231219259	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529231219308	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:59705/flights/flights_list/"
+1529231219522	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:59705/flights/flights_list/"
+1529231219807	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:59705/flights/flights_list/"
+1529231220042	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:59705/flights/flights_list/"
+1529231220043	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:59705/flights/flights_list/"
+1529231220118	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:59705/auth/login/"
+1529231220146	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:59705/auth/login/"
+1529231220541	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:59705/auth/login/"
+1529231221279	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:59705/auth/login/"
+1529231221280	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:59705/auth/login/"
+1529231221322	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:59705/flights/flights_list/"
+1529231221334	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:59705/flights/flights_list/"
+1529231221430	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:59705/flights/flights_list/"
+1529231221489	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:59705/flights/flights_list/"
+1529231221490	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:59705/flights/flights_list/"
+1529231221593	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:59705/static/crews.html"
+1529231221696	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:59705/static/crews.html"
+1529231222912	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529231223171	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529231289363	geckodriver	INFO	geckodriver 0.20.1
+1529231289385	geckodriver	INFO	Listening on 127.0.0.1:53139
+1529231290606	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.KTqg9q9lEEVQ"
+1529231291742	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231292427	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529231292433	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529231292926	Marionette	INFO	Enabled via --marionette
+1529231297641	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231298484	Marionette	INFO	Listening on port 34593
+1529231298644	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529231298986	Marionette	DEBUG	Register listener.js for window 2147483649
+1529231300357	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529231300735	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529231300736	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529231300770	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:38735/flights/flights_list/"
+1529231300896	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:38735/flights/flights_list/"
+1529231301244	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:38735/flights/flights_list/"
+1529231301351	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:38735/flights/flights_list/"
+1529231301353	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:38735/flights/flights_list/"
+1529231301413	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:38735/auth/login/"
+1529231301424	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:38735/auth/login/"
+
+(/usr/lib64/firefox/firefox:21093): dconf-WARNING **: Unable to open /var/lib/flatpak/exports/share/dconf/profile/user: Permission denied
+1529231301906	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:38735/auth/login/"
+1529231302639	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:38735/auth/login/"
+1529231302641	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:38735/auth/login/"
+1529231302685	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:38735/flights/flights_list/"
+1529231302694	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:38735/flights/flights_list/"
+1529231302803	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:38735/flights/flights_list/"
+1529231302857	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:38735/flights/flights_list/"
+1529231302859	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:38735/flights/flights_list/"
+1529231302992	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:38735/static/crews.html"
+1529231303104	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:38735/static/crews.html"
+1529231304413	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529231304670	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529231396960	geckodriver	INFO	geckodriver 0.20.1
+1529231396986	geckodriver	INFO	Listening on 127.0.0.1:42823
+1529231398197	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.rGTxc3DUnTF8"
+1529231399339	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231400042	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529231400047	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529231400535	Marionette	INFO	Enabled via --marionette
+1529231405216	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231406062	Marionette	INFO	Listening on port 37189
+1529231406133	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529231406466	Marionette	DEBUG	Register listener.js for window 2147483649
+1529231407822	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529231408294	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529231408295	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529231408347	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:34349/flights/flights_list/"
+1529231408545	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:34349/flights/flights_list/"
+1529231408781	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:34349/flights/flights_list/"
+1529231408874	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:34349/flights/flights_list/"
+1529231408876	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:34349/flights/flights_list/"
+1529231408943	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:34349/auth/login/"
+1529231408952	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:34349/auth/login/"
+
+(/usr/lib64/firefox/firefox:21416): dconf-WARNING **: Unable to open /var/lib/flatpak/exports/share/dconf/profile/user: Permission denied
+1529231409464	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:34349/auth/login/"
+1529231410182	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:34349/auth/login/"
+1529231410185	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:34349/auth/login/"
+1529231410210	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:34349/flights/flights_list/"
+1529231410255	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:34349/flights/flights_list/"
+1529231410350	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:34349/flights/flights_list/"
+1529231410403	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:34349/flights/flights_list/"
+1529231410404	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:34349/flights/flights_list/"
+1529231410553	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:34349/static/crews.html"
+1529231410685	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:34349/static/crews.html"
+1529231411756	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529231515945	geckodriver	INFO	geckodriver 0.20.1
+1529231515965	geckodriver	INFO	Listening on 127.0.0.1:36809
+1529231517227	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.SplfB5HS5tFa"
+1529231518348	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231519034	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529231519038	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529231519533	Marionette	INFO	Enabled via --marionette
+1529231524231	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231525168	Marionette	INFO	Listening on port 42389
+1529231526096	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529231526447	Marionette	DEBUG	Register listener.js for window 2147483649
+1529231527185	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529231527503	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529231527504	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529231527532	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:34103/flights/flights_list/"
+1529231527729	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:34103/flights/flights_list/"
+1529231527956	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:34103/flights/flights_list/"
+1529231528052	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:34103/flights/flights_list/"
+1529231528054	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:34103/flights/flights_list/"
+1529231528124	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:34103/auth/login/"
+1529231528133	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:34103/auth/login/"
+1529231528443	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:34103/auth/login/"
+1529231529222	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:34103/auth/login/"
+1529231529225	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:34103/auth/login/"
+1529231529256	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:34103/flights/flights_list/"
+1529231529304	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:34103/flights/flights_list/"
+1529231529414	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:34103/flights/flights_list/"
+1529231529468	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:34103/flights/flights_list/"
+1529231529468	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:34103/flights/flights_list/"
+1529231529597	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:34103/static/crews.html"
+1529231529719	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:34103/static/crews.html"
+1529231530881	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529231555539	geckodriver	INFO	geckodriver 0.20.1
+1529231555561	geckodriver	INFO	Listening on 127.0.0.1:41979
+1529231556793	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.XNyaD7x2DOyh"
+1529231557945	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231558636	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529231558641	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529231559140	Marionette	INFO	Enabled via --marionette
+1529231563832	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231565904	Marionette	INFO	Listening on port 33261
+1529231565946	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529231566276	Marionette	DEBUG	Register listener.js for window 2147483649
+1529231567040	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529231567327	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529231567328	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529231567363	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:44801/flights/flights_list/"
+1529231567549	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:44801/flights/flights_list/"
+1529231567767	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:44801/flights/flights_list/"
+1529231567846	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:44801/flights/flights_list/"
+1529231567848	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:44801/flights/flights_list/"
+1529231567905	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:44801/auth/login/"
+1529231567911	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:44801/auth/login/"
+1529231568451	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:44801/auth/login/"
+1529231569145	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:44801/auth/login/"
+1529231569148	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:44801/auth/login/"
+1529231569186	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:44801/flights/flights_list/"
+1529231569193	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:44801/flights/flights_list/"
+1529231569309	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:44801/flights/flights_list/"
+1529231569371	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:44801/flights/flights_list/"
+1529231569372	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:44801/flights/flights_list/"
+1529231569517	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:44801/static/crews.html"
+1529231569636	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:44801/static/crews.html"
+1529231570785	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529231571053	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529231712245	geckodriver	INFO	geckodriver 0.20.1
+1529231712263	geckodriver	INFO	Listening on 127.0.0.1:54363
+1529231713522	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.L82TGxtL53QD"
+1529231714654	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231715346	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529231715351	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529231715838	Marionette	INFO	Enabled via --marionette
+1529231720553	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231721416	Marionette	INFO	Listening on port 36271
+1529231721594	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529231721934	Marionette	DEBUG	Register listener.js for window 2147483649
+1529231723231	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529231723638	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529231723639	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529231723781	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:39783/flights/flights_list/"
+1529231723797	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:39783/flights/flights_list/"
+1529231724070	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:39783/flights/flights_list/"
+1529231724154	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:39783/flights/flights_list/"
+1529231724158	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:39783/flights/flights_list/"
+1529231724210	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:39783/auth/login/"
+1529231724222	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:39783/auth/login/"
+
+(/usr/lib64/firefox/firefox:22345): dconf-WARNING **: Unable to open /var/lib/flatpak/exports/share/dconf/profile/user: Permission denied
+1529231725055	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:39783/auth/login/"
+1529231725923	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:39783/auth/login/"
+1529231725940	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:39783/auth/login/"
+1529231726040	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:39783/flights/flights_list/"
+1529231726058	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:39783/flights/flights_list/"
+1529231726298	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:39783/flights/flights_list/"
+1529231726370	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:39783/flights/flights_list/"
+1529231726371	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:39783/flights/flights_list/"
+1529231726581	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:39783/static/crews.html"
+1529231726737	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:39783/static/crews.html"
+1529231727906	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529231728310	geckodriver	INFO	geckodriver 0.20.1
+1529231728333	geckodriver	INFO	Listening on 127.0.0.1:58341
+1529231729510	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.ZqrudzKlP73f"
+1529231730703	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231731452	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529231731456	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529231732039	Marionette	INFO	Enabled via --marionette
+1529231737441	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231740188	Marionette	INFO	Listening on port 36345
+1529231740314	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529231740675	Marionette	DEBUG	Register listener.js for window 2147483649
+1529231740793	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529231741084	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529231741085	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529231741421	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:39783/static/crews.html"
+1529231741705	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:39783/static/crews.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529231803441	geckodriver	INFO	geckodriver 0.20.1
+1529231803463	geckodriver	INFO	Listening on 127.0.0.1:34567
+1529231804707	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Nuq9PNEGnbCm"
+1529231805860	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231806565	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529231806569	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529231807064	Marionette	INFO	Enabled via --marionette
+1529231811714	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231812553	Marionette	INFO	Listening on port 33425
+1529231812630	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529231812972	Marionette	DEBUG	Register listener.js for window 2147483649
+1529231814293	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529231814733	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529231814734	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529231814763	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:57069/flights/flights_list/"
+1529231814920	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:57069/flights/flights_list/"
+1529231815153	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:57069/flights/flights_list/"
+1529231815230	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:57069/flights/flights_list/"
+1529231815232	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:57069/flights/flights_list/"
+1529231815306	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:57069/auth/login/"
+1529231815320	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:57069/auth/login/"
+1529231815765	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:57069/auth/login/"
+1529231816518	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:57069/auth/login/"
+1529231816520	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:57069/auth/login/"
+1529231816543	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:57069/flights/flights_list/"
+1529231816608	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:57069/flights/flights_list/"
+1529231816689	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:57069/flights/flights_list/"
+1529231816744	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:57069/flights/flights_list/"
+1529231816745	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:57069/flights/flights_list/"
+1529231816899	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:57069/static/crews.html"
+1529231817024	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:57069/static/crews.html"
+1529231818093	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529231818470	geckodriver	INFO	geckodriver 0.20.1
+1529231818498	geckodriver	INFO	Listening on 127.0.0.1:46695
+1529231819676	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.z1zGP6ZBuwWy"
+1529231820798	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231821514	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529231821519	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529231822002	Marionette	INFO	Enabled via --marionette
+1529231827369	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231828318	Marionette	INFO	Listening on port 45637
+1529231828453	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529231828771	Marionette	DEBUG	Register listener.js for window 2147483649
+1529231829523	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529231829746	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529231829747	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529231830086	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:57069/static/crews.html"
+1529231830278	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:57069/static/crews.html"
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529231909603	geckodriver	INFO	geckodriver 0.20.1
+1529231909628	geckodriver	INFO	Listening on 127.0.0.1:55741
+1529231910844	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.yWYfGWiYEJyh"
+1529231912437	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231913525	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529231913529	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529231914070	Marionette	INFO	Enabled via --marionette
+1529231918781	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231919650	Marionette	INFO	Listening on port 33229
+1529231919715	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529231920085	Marionette	DEBUG	Register listener.js for window 2147483649
+1529231921535	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529231921948	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529231921950	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529231921989	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:47905/flights/flights_list/"
+1529231922121	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:47905/flights/flights_list/"
+1529231922382	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:47905/flights/flights_list/"
+1529231922471	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:47905/flights/flights_list/"
+1529231922472	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:47905/flights/flights_list/"
+1529231922537	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:47905/auth/login/"
+1529231922553	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:47905/auth/login/"
+1529231923000	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:47905/auth/login/"
+1529231923750	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:47905/auth/login/"
+1529231923752	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:47905/auth/login/"
+1529231923780	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:47905/flights/flights_list/"
+1529231923809	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:47905/flights/flights_list/"
+1529231923926	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:47905/flights/flights_list/"
+1529231923980	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:47905/flights/flights_list/"
+1529231923981	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:47905/flights/flights_list/"
+1529231924107	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:47905/static/crews.html"
+1529231924224	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:47905/static/crews.html"
+1529231925287	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529231925665	geckodriver	INFO	geckodriver 0.20.1
+1529231925685	geckodriver	INFO	Listening on 127.0.0.1:48819
+1529231926866	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Br1xGaN3MdHK"
+1529231927975	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231928670	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529231928674	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529231929156	Marionette	INFO	Enabled via --marionette
+1529231934066	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529231934948	Marionette	INFO	Listening on port 39485
+1529231935046	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529231935480	Marionette	DEBUG	Register listener.js for window 2147483649
+1529231936204	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529231936350	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529231936352	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529231936630	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:47905/static/crews.html"
+1529231936846	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:47905/static/crews.html"
+1529231937665	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529232044543	geckodriver	INFO	geckodriver 0.20.1
+1529232044561	geckodriver	INFO	Listening on 127.0.0.1:41153
+1529232045843	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.B6vnyh1ik1RA"
+1529232047002	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529232047698	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529232047702	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529232048209	Marionette	INFO	Enabled via --marionette
+1529232053191	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529232054079	Marionette	INFO	Listening on port 39199
+1529232054236	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529232054561	Marionette	DEBUG	Register listener.js for window 2147483649
+1529232055895	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529232056325	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529232056330	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529232056369	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:44315/flights/flights_list/"
+1529232056535	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:44315/flights/flights_list/"
+1529232056760	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:44315/flights/flights_list/"
+1529232056860	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:44315/flights/flights_list/"
+1529232056862	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:44315/flights/flights_list/"
+1529232056924	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:44315/auth/login/"
+1529232056966	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:44315/auth/login/"
+
+(/usr/lib64/firefox/firefox:23795): dconf-WARNING **: Unable to open /var/lib/flatpak/exports/share/dconf/profile/user: Permission denied
+1529232057578	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:44315/auth/login/"
+1529232058325	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:44315/auth/login/"
+1529232058327	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:44315/auth/login/"
+1529232058368	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:44315/flights/flights_list/"
+1529232058377	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:44315/flights/flights_list/"
+1529232058473	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:44315/flights/flights_list/"
+1529232058517	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:44315/flights/flights_list/"
+1529232058518	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:44315/flights/flights_list/"
+1529232058643	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:44315/static/crews.html"
+1529232058741	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:44315/static/crews.html"
+1529232059788	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529232060171	geckodriver	INFO	geckodriver 0.20.1
+1529232060190	geckodriver	INFO	Listening on 127.0.0.1:56431
+1529232061376	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.BuPwpKVJKAEQ"
+1529232062513	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529232063207	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529232063215	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529232063764	Marionette	INFO	Enabled via --marionette
+1529232068791	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529232069649	Marionette	INFO	Listening on port 46555
+1529232069721	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529232070066	Marionette	DEBUG	Register listener.js for window 2147483649
+1529232070862	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529232071155	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529232071156	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529232071603	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:44315/static/crews.html"
+1529232071625	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:44315/static/crews.html"
+1529232072919	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+[Child 23967, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builddir/build/BUILD/firefox-57.0b12/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Parent 23891, Gecko_IOThread] WARNING: pipe error (48): Connection reset by peer: file /builddir/build/BUILD/firefox-57.0b12/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529232199119	geckodriver	INFO	geckodriver 0.20.1
+1529232199139	geckodriver	INFO	Listening on 127.0.0.1:40985
+1529232200397	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.WkHlQogh9wlK"
+1529232201538	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529232202228	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529232202232	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529232202724	Marionette	INFO	Enabled via --marionette
+1529232207699	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529232208528	Marionette	INFO	Listening on port 46203
+1529232208619	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529232208946	Marionette	DEBUG	Register listener.js for window 2147483649
+1529232210235	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529232210627	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529232210629	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529232210664	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:40161/flights/flights_list/"
+1529232210833	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:40161/flights/flights_list/"
+1529232211096	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:40161/flights/flights_list/"
+1529232211182	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:40161/flights/flights_list/"
+1529232211184	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:40161/flights/flights_list/"
+1529232211245	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:40161/auth/login/"
+1529232211276	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:40161/auth/login/"
+
+(/usr/lib64/firefox/firefox:24296): dconf-WARNING **: Unable to open /var/lib/flatpak/exports/share/dconf/profile/user: Permission denied
+1529232211741	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:40161/auth/login/"
+1529232212512	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:40161/auth/login/"
+1529232212514	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:40161/auth/login/"
+1529232212556	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:40161/flights/flights_list/"
+1529232212564	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:40161/flights/flights_list/"
+1529232212682	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:40161/flights/flights_list/"
+1529232212739	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:40161/flights/flights_list/"
+1529232212739	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:40161/flights/flights_list/"
+1529232212923	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:40161/static/crews.html"
+1529232213031	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:40161/static/crews.html"
+1529232214130	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529232214442	geckodriver	INFO	geckodriver 0.20.1
+1529232214461	geckodriver	INFO	Listening on 127.0.0.1:51151
+1529232215643	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.b381ThHD51nT"
+1529232216770	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529232217462	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529232217467	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529232217984	Marionette	INFO	Enabled via --marionette
+1529232223404	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529232226620	Marionette	INFO	Listening on port 44453
+1529232226720	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529232227113	Marionette	DEBUG	Register listener.js for window 2147483649
+1529232227246	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529232227401	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529232227402	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529232227683	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:40161/static/crews.html"
+1529232227855	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:40161/static/crews.html"
+1529232229228	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1529232337158	geckodriver	INFO	geckodriver 0.20.1
+1529232337182	geckodriver	INFO	Listening on 127.0.0.1:40301
+1529232338410	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.azL72mZjez5c"
+1529232339548	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529232340248	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529232340253	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529232340737	Marionette	INFO	Enabled via --marionette
+1529232345415	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529232346295	Marionette	INFO	Listening on port 45363
+1529232346350	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529232346685	Marionette	DEBUG	Register listener.js for window 2147483649
+1529232348084	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529232348451	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529232348453	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529232348482	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:33853/flights/flights_list/"
+1529232348633	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:33853/flights/flights_list/"
+1529232348848	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:33853/flights/flights_list/"
+1529232348944	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:33853/flights/flights_list/"
+1529232348946	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:33853/flights/flights_list/"
+1529232349006	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:33853/auth/login/"
+1529232349012	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:33853/auth/login/"
+1529232349433	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:33853/auth/login/"
+1529232350175	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:33853/auth/login/"
+1529232350180	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:33853/auth/login/"
+1529232350224	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:33853/flights/flights_list/"
+1529232350231	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:33853/flights/flights_list/"
+1529232350345	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:33853/flights/flights_list/"
+1529232350510	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:33853/flights/flights_list/"
+1529232350511	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:33853/flights/flights_list/"
+1529232350537	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:33853/flights/flights_list/"
+1529232350577	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:33853/flights/flights_list/"
+1529232429377	geckodriver	INFO	geckodriver 0.20.1
+1529232429399	geckodriver	INFO	Listening on 127.0.0.1:46193
+1529232430636	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.9E6clrJxDJoO"
+1529232431832	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529232432582	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529232432588	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529232433109	Marionette	INFO	Enabled via --marionette
+1529232437749	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529232438634	Marionette	INFO	Listening on port 32815
+1529232438677	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529232439011	Marionette	DEBUG	Register listener.js for window 2147483649
+1529232440420	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529232440751	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529232440752	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529232440784	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:42115/flights/flights_list/"
+1529232440967	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:42115/flights/flights_list/"
+1529232441181	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:42115/flights/flights_list/"
+1529232441266	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:42115/flights/flights_list/"
+1529232441268	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:42115/flights/flights_list/"
+1529232441327	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:42115/auth/login/"
+1529232441338	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:42115/auth/login/"
+1529232441784	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:42115/auth/login/"
+1529232442503	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:42115/auth/login/"
+1529232442505	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:42115/auth/login/"
+1529232442553	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:42115/flights/flights_list/"
+1529232442563	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:42115/flights/flights_list/"
+1529232442674	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:42115/flights/flights_list/"
+1529232442731	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:42115/flights/flights_list/"
+1529232442732	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:42115/flights/flights_list/"
+1529232442854	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:42115/static/crews.html"
+1529232442958	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:42115/static/crews.html"
+1529232444054	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+1529232444385	geckodriver	INFO	geckodriver 0.20.1
+1529232444410	geckodriver	INFO	Listening on 127.0.0.1:53347
+1529232445617	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.wzoHuYGIDN5M"
+1529232446937	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529232447704	addons.xpi-utils	WARN	addMetadata: Add-on aushelper@mozilla.org is invalid: [Exception... "Component returned failure code: 0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST) [nsIFile.isFile]"  nsresult: "0x80520006 (NS_ERROR_FILE_TARGET_DOES_NOT_EXIST)"  location: "JS frame :: resource://gre/modules/addons/XPIInstall.jsm :: this.loadManifestFromFile :: line 971"  data: no] Stack trace: this.loadManifestFromFile()@resource://gre/modules/addons/XPIInstall.jsm:971 < syncLoadManifestFromFile()@resource://gre/modules/addons/XPIProvider.jsm:947 < addMetadata()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1231 < processFileChanges()@resource://gre/modules/addons/XPIProvider.jsm -> resource://gre/modules/addons/XPIProviderUtils.js:1578 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3278 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2182 < callProvider()@resource://gre/modules/AddonManager.jsm:263 < _startProvider()@resource://gre/modules/AddonManager.jsm:730 < startup()@resource://gre/modules/AddonManager.jsm:897 < startup()@resource://gre/modules/AddonManager.jsm:3081 < observe()@jar:file:///usr/lib64/firefox/omni.ja!/components/addonManager.js:65
+1529232447709	addons.xpi-utils	WARN	Could not uninstall invalid item from locked install location
+1529232448285	Marionette	INFO	Enabled via --marionette
+1529232453264	addons.xpi	WARN	Can't get modified time of /usr/lib64/firefox/browser/features/aushelper@mozilla.org.xpi
+1529232454171	Marionette	INFO	Listening on port 34619
+1529232455101	Marionette	WARN	TLS certificate errors will be ignored for this session
+1529232455431	Marionette	DEBUG	Register listener.js for window 2147483649
+1529232455554	Marionette	DEBUG	Received DOM event "beforeunload" for "about:blank"
+1529232456011	Marionette	DEBUG	Received DOM event "pagehide" for "about:blank"
+1529232456012	Marionette	DEBUG	Received DOM event "unload" for "about:blank"
+1529232456044	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:42115/flights/flights_list/"
+1529232456196	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:42115/flights/flights_list/"
+1529232456504	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:42115/flights/flights_list/"
+1529232456706	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:42115/flights/flights_list/"
+1529232456708	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:42115/flights/flights_list/"
+1529232456788	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:42115/auth/login/"
+1529232456796	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:42115/auth/login/"
+1529232457313	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:42115/auth/login/"
+1529232458080	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:42115/auth/login/"
+1529232458083	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:42115/auth/login/"
+1529232458132	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:42115/flights/flights_list/"
+1529232458141	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:42115/flights/flights_list/"
+1529232458247	Marionette	DEBUG	Received DOM event "beforeunload" for "http://localhost:42115/flights/flights_list/"
+1529232458291	Marionette	DEBUG	Received DOM event "pagehide" for "http://localhost:42115/flights/flights_list/"
+1529232458293	Marionette	DEBUG	Received DOM event "unload" for "http://localhost:42115/flights/flights_list/"
+1529232458413	Marionette	DEBUG	Received DOM event "DOMContentLoaded" for "http://localhost:42115/static/crews.html"
+1529232458518	Marionette	DEBUG	Received DOM event "pageshow" for "http://localhost:42115/static/crews.html"
+1529232459633	Marionette	DEBUG	Canceled page load listener because no navigation has been detected
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping

@@ -80,7 +80,8 @@ class Flight(models.Model):
             departure_time__lte=self.arrival_time,
             arrival_time__gte=self.departure_time,
         )
-        if other_flights.filter(airplane=self.airplane).exists():
+        conflicting_flights = other_flights.select_for_update().filter(airplane=self.airplane)
+        if conflicting_flights.exists():
             raise ValidationError('This flights airplane is currently busy')
         if self.crew is not None:
             if other_flights.filter(crew=self.crew).exists():

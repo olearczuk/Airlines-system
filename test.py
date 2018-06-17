@@ -5,6 +5,11 @@ from django.contrib.auth.models import User
 from django.utils import timezone
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from selenium.webdriver.firefox.webdriver import WebDriver
+from selenium import webdriver
+from selenium.webdriver.support.ui import Select, WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 from system.flights.models import Flight, Airplane, Crew, Airport
 
 
@@ -64,6 +69,24 @@ class ApiTest(TestCase):
 class SeleniumTest(StaticLiveServerTestCase):
     date = datetime.strptime('2018-12-22', '%Y-%m-%d').astimezone(timezone.utc)
 
+    def procedure(self, driver, flightNum):
+        # Logging in
+        driver.get("{}/".format(self.live_server_url))
+        driver.find_element_by_id("login_link").click()
+        driver.find_element_by_id("login_username").send_keys("username")
+        driver.find_element_by_id("login_password").send_keys("password")
+        driver.find_element_by_id("login_button").click()
+
+        # Try to change crew
+        select = "select{}".format(flightNum)
+        button = "select_button{}".format(flightNum)
+        driver.get("{}/static/crews.html".format(self.live_server_url))
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, select))
+        )
+        Select(driver.find_element_by_id(select)).select_by_index(3)
+        driver.find_element_by_id(button).click()
+
     def test(self):
         start_airport = Airport.objects.create(city='Warsaw', country='Poland')
         final_airport = Airport.objects.create(city='Cracow', country='Poland')
@@ -77,35 +100,14 @@ class SeleniumTest(StaticLiveServerTestCase):
                                            airplane=airplane, departure_time=self.date,
                                            arrival_time=self.date + timedelta(hours=4))
             flight.save()
-
+        crew = Crew.objects.create(captainsName='NewName', captainsSurname='NewSurname')
+        crew.save()
         user = User.objects.create(username="username")
         user.set_password("password")
         user.save()
 
-        # Try to create new crew without logging in
-        driver.get("{}/static/crews.html".format(self.live_server_url))
-        driver.find_element_by_id("captainsName").send_keys("Name")
-        driver.find_element_by_id("captainsSurname").send_keys("Surname")
-        driver.find_element_by_id("post_crew_button").click()
+        self.procedure(driver, 1)
 
-        alert = driver.switch_to.alert
-        alert_text = "You need to bo logged in to create new crew. Head to localhost:8000/auth/login."
-        self.assertEqual(alert.text, alert_text)
-        alert.accept()
+        driver1 = webdriver.Firefox()
 
-        # Logging in
-        driver.get("{}/".format(self.live_server_url))
-        driver.find_element_by_id("login_link").click()
-        driver.find_element_by_id("login_username").send_keys("username")
-        driver.find_element_by_id("login_password").send_keys("password")
-        driver.find_element_by_id("login_button").click()
-
-        # Create new crew after logging in
-        driver.get("{}/static/crews.html".format(self.live_server_url))
-        driver.find_element_by_id("captainsName").send_keys("Name")
-        driver.find_element_by_id("captainsSurname").send_keys("Surname")
-        driver.find_element_by_id("post_crew_button").click()
-
-        alert = driver.switch_to.alert
-        alert_text = "New crew added!"
-        self.assertEqual(alert.text, alert_text)
+        self.procedure(driver1, 2)

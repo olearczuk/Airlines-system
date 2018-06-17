@@ -27,9 +27,10 @@ function formatDate(date) {
 function createSelect(flightId) {
 	let div = document.createElement("div");
 	let select = document.createElement("select");
-	select.name = "Change crew";
-	select.value = "";
+	let counter = 0;
 	for (let [key, val] of crews) {
+		if (counter === 0)
+			select.value = key;
 		let option = document.createElement("option");
 		option.value = key;
 		option.innerText = val;
@@ -120,8 +121,10 @@ function patchCrew(flightId) {
 
 	})
 	.then((data) => {
-		if (data != "")
-			crewElement = document.getElementById("crew" + flightId).innerText = crews.get(data.crew);
+		if (data != "") {
+            document.getElementById("crew" + flightId).innerText = crews.get(data.crew);
+            alert("Successfully changed crew!");
+        }
 	})
 	.catch((error) => console.log(error));
 }
