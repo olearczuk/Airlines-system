@@ -1,67 +1,49 @@
-{% extends "template.html" %}
-{% load static %}
-<!--<link rel="stylesheet" type="text/css" href="{% static "/flights/flights_list.css" %}">-->
+{% extends "template.html" %}   
 {% block content %}
-    <style>
-        table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            width: 80%;
-        }
-
-        td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-
-        tr:nth-child(even) {
-            background-color: #dddddd;
-        }
-
-        @media only screen and (max-width: 760px),
-        (min-device-width: 768px) and (max-device-width: 1024px){
-            table, thead, tbody, th, td, tr {
-                display: block;
-            }
-            td, th {
-                text-align: left;
-                border: none;
-                border-bottom: 1px solid #dddddd;
-                position: relative;
-                padding-left: 20%;
-            }
-        }
-
-    </style>
-
     <form method="get">
-        {{ form.as_p }}
-        <p><input type="submit" value="Filter"></p>
+        {% csrf_token %}
+        <div class="form-group row">
+                <div class="form-group col-md-10">
+                    <input type="date" class="form-control" id="departure_time" name="departure_time" placeholder="Departure time">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="form-group col-md-10">
+                    <input type="date" class="form-control" id="arrival_time" name="arrival_time" placeholder="Arrival time">
+                </div>
+            </div>
+        <button type="submit" class="btn btn-primary" value="Filter">Filter</button>
     </form>
+    <br>
     {% if was_err %}
         <span style="color:red">Wrong format, proper format: YYYY-MM-DD HH:MM UTC</span><br>
     {% endif %}
-    <table>
-        <tr>
-            <th>Link</th>
-            <th>From</th>
-            <th>To</th>
-            <th>Airplane</th>
-            <th>Departure time</th>
-            <th>Arrival time</th>
-        </tr>
-    {% for flight in flights %}
-        <tr>
-            <td><a href="/flights/{{ flight.id }}">link</a></td>
-            <td>{{ flight.start_airport.city }}</td>
-            <td>{{ flight.final_airport.city }}</td>
-            <td>{{ flight.airplane.official_number }}</td>
-            <td>{{ flight.departure_time }}</td>
-            <td>{{ flight.arrival_time }}</td>
-        </tr>
-    {% endfor %}
-    <br>
+
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Link</th>
+                <th scope="col">From</th>
+                <th scope="col">To</th>
+                <th scope="col">Airplane</th>
+                <th scope="col">Departure time</th>
+                <th scope="col">Arrival time</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for flight in flights %}
+            <tr>
+                <th scope="row">{{ flight.id }}</th>
+                <td><a href="/flights/{{ flight.id }}">Details</a></td>
+                <td>{{ flight.start_airport.city }}</td>
+                <td>{{ flight.final_airport.city }}</td>
+                <td>{{ flight.airplane.official_number }}</td>
+                <td>{{ flight.departure_time }}</td>
+                <td>{{ flight.arrival_time }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
     </table>
 
 

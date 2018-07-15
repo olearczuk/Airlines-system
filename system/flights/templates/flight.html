@@ -1,26 +1,38 @@
 {% extends "template.html" %}
 
 {% block content %}
-    <br><br>
-    Airplane number: {{ flight.airplane.official_number }}<br>
-    Capacity: {{ flight.airplane.capacity }}<br>
-    Flight from {{ flight.start_airport.city }} to {{ flight.final_airport.city }}<br>
-    <br>
-    Registered passengers:
-    <br>
-    {% for passenger in passengers %}
-        <span> {{ passenger.name }} {{ passenger.surname }}</span>
-        <br>
-    {% endfor %}
-
+    <div class="jumbotron">
+        <h1 class="display-6">Flight info</h1>
+        <hr class="my-4">
+        <p class="lead">Airplane number: {{ flight.airplane.official_number }}</p>
+        <p class="lead">Capacity: {{ flight.airplane.capacity }}</p>
+        <p class="lead">Flight from {{ flight.start_airport.city }} to {{ flight.final_airport.city }}</p>
+    </div>
     {% if request.user.is_authenticated %}
         <form method="post">
             {% csrf_token %}
-            {{ form.as_p }}
-            <input type="submit" value="Add passenger">
+            <div class="form-group row">
+                    <div class="form-group col-md-10">
+                        <input type="text" class="form-control" name="name" placeholder="Name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="form-group col-md-10">
+                        <input type="text" class="form-control" name="surname" placeholder="Surname">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Book seat</button>
+            <!-- <input type="submit" value="Add passenger"> -->
         </form>
     {% endif %}
     {% if to_show %}
         <span style="color:red">{{info}}</span>
     {% endif %}
+    <br>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item active">Registered passengers</li>
+        {% for passenger in passengers %}
+            <li class="list-group-item"> {{ passenger.name }} {{ passenger.surname }}</li>
+        {% endfor %}
+    </ul>
 {% endblock %}

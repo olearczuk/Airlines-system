@@ -3,41 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>Crew</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div id="app">
-        <a href="/">Main page</a>
-        <br><br>
-
+    <div id="app" class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="/">Main page</a>
+                        <a class="nav-item nav-link" href="/auth/login">Login</a>
+                </ul>
+            </div>  
+        </nav>
+        <br>
         <crew-creator v-on:post-crew="postCrew($event)"></crew-creator>
-        <table>
-            <tr>
-                <th>Flight</th>
-                <th><span style="color:red">&#9992;</span> nr</th>
-                <th>Departure time</th>
-                <th>Arrival time</th>
-                <th>Current crew</th>
-            </tr>
-            <tr v-for="flight in flights">
-                <td>
-                    {{ flight.start_airport.city }}({{ flight.start_airport.country }})
-                    <span style="color:red">&#8658;</span>
-                    {{ flight.final_airport.city }}({{ flight.final_airport.country }})
-                    <br/>
-                    <crew-picker
-                        v-on:patch-crew="patchCrew($event)"
-                        v-bind:crews='crews'
-                        v-bind:flight='flight'
-                    ></crew-picker>
-                </td>
-                <td>{{ flight.airplane.official_number }}</td>
-                <td>{{ formatDate(flight.departure_time) }}</td>
-                <td>{{ formatDate(flight.arrival_time) }}</td>
-                <td>{{ crewName(flight.crew) }}</td>
-            </tr>
+        <br>    
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Flight</th>
+                    <th scope="col">Airplane</th>
+                    <th scope="col">Departure time</th>
+                    <th scope="col">Arrival time</th>
+                    <th scope="col">Current crew</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="flight in flights">
+                    <th scope="row">{{ flight.id }}</th>
+                    <td>
+                        {{ flight.start_airport.city }}({{ flight.start_airport.country }})
+                        <span style="color:red">&#8658;</span>
+                        {{ flight.final_airport.city }}({{ flight.final_airport.country }})
+                        <br/>
+                        <crew-picker
+                            v-on:patch-crew="patchCrew($event)"
+                            v-bind:crews='crews'
+                            v-bind:flight='flight'
+                        ></crew-picker>
+                    </td>
+                    <td>{{ flight.airplane.official_number }}</td>
+                    <td>{{ formatDate(flight.departure_time) }}</td>
+                    <td>{{ formatDate(flight.arrival_time) }}</td>
+                    <td>{{ crewName(flight.crew) }}</td>
+                </tr>
+            </tbody>
         </table>
      </div>
 
@@ -49,19 +64,26 @@
                     selectedCrew: '',
                 }
             },
+            
             template: `
-                <div class='crew-picker'>
-                    <select v-model="selectedCrew">
-                    <option value="">Choose crew</option>
-                        <option v-for="crew in crews" v-bind:value="crew.id">
-                            {{crew.captainsName + " " + crew.captainsSurname}}
-                        </option>
-                    </select>
-                    <button v-on:click="pom">Submit</button>
-                </div>
+                <form class="form-inline">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <select class="form-control" v-model="selectedCrew">
+                                    <option value=''>Choose crew</option>
+                                    <option v-for="crew in crews" :value="crew.id">
+                                        {{crew.captainsName + ' ' + crew.captainsSurname}}
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary" @click="clicked">Submit</button>
+                    </div>
+                </form>
             `,
             methods: {
-                pom: function () {
+            clicked: function () {
                     if (this.selectedCrew === '')
                         alert('Choose crew before submitting!')
                     else
@@ -83,18 +105,31 @@
                 }
             },
             template: `
-                <div class="crew-creator">
-                    captain's name: <br> <input v-model='captainsName' type="text"> <br>
-                    captain's surname: <br> <input v-model='captainsSurname' type="text"> <br><br>
-                    <button v-on:click='submit'>Submit</button>
-                </div>
+                <form>
+                    <div class="form-group row">
+                        <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                        <div class="form-group col-md-10">
+                            <input v-model='captainsName' type="text" class="form-control" id="inputName" placeholder="Enter captain's name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputSurname" class="col-sm-2 col-form-label">Surname</label>
+                        <div class="form-group col-md-10">
+                            <input v-model='captainsSurname' type="text" class="form-control" id="inputSurname" placeholder="Enter captain's surname">
+                        </div>
+                    </div>
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary" @click='submit($event)'>Add captain</button>
+                        </div>
+                </form>
             `,
             methods: {
-                submit: function () {
-                        this.$emit('post-crew', {
-                            "captainsName": this.captainsName, 
-                            "captainsSurname": this.captainsSurname
-                        })
+                submit: function (ev) {
+                    ev.preventDefault()
+                    this.$emit('post-crew', {
+                        "captainsName": this.captainsName, 
+                        "captainsSurname": this.captainsSurname
+                    })
                 }
 
             }
@@ -115,7 +150,6 @@
                     .then((response) => response.json())
                     .then((response) => {
                         this.flights = response
-                        console.log('flights', this.flights)
                     })
                     .catch((error) => {
                         console.log(error);
@@ -126,7 +160,6 @@
                     .then((response) => response.json())
                     .then((response) => {
                         this.crews = response
-                        console.log('crews', this.crews)
                     })
                     .catch((error) => console.log(error))
 
@@ -139,7 +172,6 @@
                     }
                     date = new Date(date)
                     toLocale = date.toLocaleDateString("en-US", options)
-                    console.log(toLocale)
                     return toLocale
                 },
                 getCookie: function (name) {
@@ -158,7 +190,6 @@
                 patchCrew: function (data) {
                     let csrftoken = this.getCookie('csrftoken')
                     let flight = data.flight
-                    console.log(flight, this.flights.indexOf(flight))
                     let crew = data.crew
                     let url = this.api_root + 'flights/' + flight.id + '/'
                     if (crew != flight.crew) {
@@ -181,7 +212,6 @@
                                     alert("You need to bo logged in to set crew. Head to localhost:8000/auth/login.")
                                 if (response.ok === false)
                                     return ''
-                                console.log(response)
                                 if (response.redirected)
                                     window.location.replace(response.url)
                                 return response.json()
@@ -218,7 +248,6 @@
 
                     fetch(url, fetchData)
                         .then((response) => {
-                            console.log(response)
                             if (response.status === 400)
                                 alert("This name and surname are already in use!")
                             if (response.status === 401)
@@ -228,7 +257,6 @@
                             return response.json()
                         })
                         .then((data) => {
-                            console.log("data", data)
                             if (data != '')
                                 this.crews.push(data)
                         })
@@ -237,37 +265,5 @@
             }
         })
      </script>
-        <style>
-        table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-
-        tr:nth-child(even) {
-            background-color: #dddddd;
-        }
-
-        @media only screen and (max-width: 760px),
-        (min-device-width: 768px) and (max-device-width: 1024px){
-            table, thead, tbody, th, td, tr {
-                display: block;
-            }
-            td, th {
-                text-align: left;
-                border: none;
-                border-bottom: 1px solid #dddddd;
-                position: relative;
-                padding-left: 20%;
-            }
-        }
-
-    </style>
 </body>
 </html>

@@ -4,9 +4,17 @@
     {% else %}
         <form action="{% url 'login' %}" method="POST">
             {% csrf_token %}
-            <input type="text" id="login_username" name="username" placeholder="username">
-            <input type="password" id="login_password" name="password" placeholder="password">
-            <input type="submit" id="login_button" value="Login">
+            <div class="form-group row">
+                <div class="form-group col-md-10">
+                    <input type="text" class="form-control" id="login_username" name="username" placeholder="Username">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="form-group col-md-10">
+                    <input type="password" class="form-control" id="login_password" name="password" placeholder="Password">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
         </form>
         or <a href="{% url 'register' %}">Register</a>
     {% endif %}
