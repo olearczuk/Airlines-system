@@ -1,7 +1,6 @@
 from rest_framework import serializers
 from system.flights.models import Flight, Airport, Airplane, Crew
 
-
 class AirportSerializer(serializers.ModelSerializer):
     class Meta:
         model = Airport
@@ -15,7 +14,6 @@ class AirplaneSerializer(serializers.ModelSerializer):
 
 
 class CrewSerializer(serializers.ModelSerializer):
-
     class Meta:
         model = Crew
         fields = ('captainsName', 'captainsSurname', 'id')

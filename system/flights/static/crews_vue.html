@@ -5,6 +5,7 @@
     <title>Crew</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
@@ -15,7 +16,9 @@
             <div class="collapse navbar-collapse">
                 <div class="navbar-nav">
                         <a class="nav-item nav-link" href="/">Main page</a>
-                        <a class="nav-item nav-link" href="/auth/login">Login</a>
+                        <a v-if="username" class="nav-item nav-link" href="/auth/logout">Logout</a>
+                        <a v-else class="nav-item nav-link" href="/auth/login" @click="username = ''">Login</a>
+                        <a class="nav-item nav-link" href="/auth/register">Register</a>
                 </ul>
             </div>  
         </nav>
@@ -142,6 +145,7 @@
                 flights: [],
                 crews: [],
                 api_root: '/api/',
+                username: '',
             },
             created() {
                 let url = this.api_root + 'flights.json'
@@ -157,12 +161,14 @@
                
                 url = this.api_root + 'crew.json'
                 fetch(url)
-                    .then((response) => response.json())
-                    .then((response) => {
-                        this.crews = response
-                    })
-                    .catch((error) => console.log(error))
-
+                    .then(response => response.json())
+                    .then(data => this.crews = data)
+                    .catch(error => console.log(error));
+                
+                url = this.api_root + 'user_detail'
+                axios.get(url)
+                    .then(response => this.username = response.data['username'])
+                    .catch(error => console.log(error));
             },
             methods: {
                 formatDate: function (date) {
@@ -205,33 +211,31 @@
                             },
                         }
                         fetch(url, fetchData)
-                            .then((response) => {
+                            .then(response => {
                                 if (response.status === 400)
                                     alert("This crew is busy!")
                                 if (response.status === 401)
                                     alert("You need to bo logged in to set crew. Head to localhost:8000/auth/login.")
                                 if (response.ok === false)
-                                    return ''
-                                if (response.redirected)
-                                    window.location.replace(response.url)
-                                return response.json()
+                                    return '';
+                                return response.json();
                             })
-                            .then((data) => {
+                            .then(data => {
                                 if (data != '') {
-                                    newFlight = flight
-                                    newFlight.crew = crew
-                                    Vue.set(this.flights, this.flights.indexOf(flight), newFlight)
+                                    newFlight = flight;
+                                    newFlight.crew = crew;
+                                    Vue.set(this.flights, this.flights.indexOf(flight), newFlight);
                                 }
                             })
-                            .catch((error) => console.log(error))
+                            .catch(error => console.log(error));
                         }
 
                 },
                 postCrew: function(data) {
                     if (data.captainsName === '' || data.captainsSurname === '')
-                        alert('Make sure to write both name and surname!')
-                    let csrftoken = this.getCookie('csrftoken')
-                    let url = this.api_root + 'crew/'      
+                        alert('Make sure to write both name and surname!');
+                    let csrftoken = this.getCookie('csrftoken');
+                    let url = this.api_root + 'crew/';
 
                     let fetchData = {
                             method: 'POST',
@@ -247,20 +251,20 @@
                         }
 
                     fetch(url, fetchData)
-                        .then((response) => {
+                        .then(response => {
                             if (response.status === 400)
-                                alert("This name and surname are already in use!")
+                                alert("This name and surname are already in use!");
                             if (response.status === 401)
-                                alert("You need to bo logged in to create new crew. Head to localhost:8000/auth/login.")
+                                alert("You need to bo logged in to create new crew. Head to localhost:8000/auth/login.");
                             if (response.ok === false)
-                                return ''
-                            return response.json()
+                                return '';
+                            return response.json();
                         })
-                        .then((data) => {
+                        .then(data => {
                             if (data != '')
-                                this.crews.push(data)
+                                this.crews.push(data);
                         })
-                        .catch((error) => console.log(error))
+                        .catch(error => console.log(error));
                 }
             }
         })

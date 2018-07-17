@@ -1,11 +1,14 @@
 """Views module"""
-from rest_framework import viewsets
-from rest_framework import status
+from rest_framework import viewsets, status, generics
 from rest_framework.response import Response
+from rest_framework.decorators import api_view
+from django.http import JsonResponse
 from django.core.exceptions import ValidationError
+from django.contrib.auth.models import User
 from system.flights.models import Flight, Airplane, Airport, Crew
 from system.api.serializers import FlightSerializer, AirplaneSerializer, \
     AirportSerializer, CrewSerializer
+
 
 
 class FlightViewSet(viewsets.ModelViewSet): # pylint: disable=too-many-ancestors
@@ -56,3 +59,9 @@ class CrewViewSet(viewsets.ModelViewSet): # pylint: disable=too-many-ancestors
         self.perform_create(serializer)
         headers = self.get_success_headers(serializer.data)
         return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
+
+
+@api_view(['GET'])
+def user_detail(request):
+   username = request.user.username
+   return JsonResponse({'username': username})

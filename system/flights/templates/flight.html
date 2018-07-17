@@ -2,11 +2,10 @@
 
 {% block content %}
     <div class="jumbotron">
-        <h1 class="display-6">Flight info</h1>
+        <h1 class="display-6">Flight from {{ flight.start_airport.city }} to {{ flight.final_airport.city }}</h1>
         <hr class="my-4">
         <p class="lead">Airplane number: {{ flight.airplane.official_number }}</p>
         <p class="lead">Capacity: {{ flight.airplane.capacity }}</p>
-        <p class="lead">Flight from {{ flight.start_airport.city }} to {{ flight.final_airport.city }}</p>
     </div>
     {% if request.user.is_authenticated %}
         <form method="post">
