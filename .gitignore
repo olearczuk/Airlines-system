@@ -1,5 +1,5 @@
 # ignore .pyc files
 *.pyc
 /.idea/*
-*/migrations/*
 db.sqlite3
+/system/flights/migrations/*

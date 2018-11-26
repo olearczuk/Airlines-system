@@ -1,6 +1,6 @@
 from django.core.management import BaseCommand
 from django.db import transaction
-from system.flights.models import Airplane, Airport, Flight
+from system.flights.models import Airplane, Airport, Flight, Passenger, Ticket, Crew
 from faker import Faker
 from random import randint, choice, shuffle, sample
 import pytz
@@ -15,6 +15,9 @@ class Command(BaseCommand):
         Flight.objects.all().delete()
         Airplane.objects.all().delete()
         Airport.objects.all().delete()
+        Passenger.objects.all().delete()
+        Ticket.objects.all().delete()
+        Crew.objects.all().delete()
 
         fake = Faker()
         airplanes = []
@@ -30,23 +33,17 @@ class Command(BaseCommand):
             airplanes.append(airplane)
 
         for i in range(50):
-            city = fake.city()
-            country = fake.country()
-            airport = Airport(city=city, country=country)
+            airport = Airport(city=fake.city(), country=fake.country())
             airport.full_clean()
             airport.clean()
             airport.save()
             airports.append(airport)
 
-        tz = pytz.utc
         shuffle(airplanes)
-
-        # d1 = datetime.strptime('1/1/2017 1:30 PM', '%m/%d/%Y %I:%M %p')
-        # d2 = datetime.strptime('1/1/2018 4:50 AM', '%m/%d/%Y %I:%M %p')
 
         for airplane in airplanes:
 
-            d_time = fake.date_time_between(start_date='-1y', tzinfo=pytz.utc)
+            d_time = fake.date_time_between(start_date='-1y', end_date='+1y', tzinfo=pytz.utc)
             a_time = d_time + timedelta(hours=randint(1, 10))
             flight = Flight(start_airport=choice(airports),
                             final_airport=choice(airports),
