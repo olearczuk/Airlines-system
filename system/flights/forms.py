@@ -1,6 +1,6 @@
 """forms module"""
 from django.forms import ModelForm
-from .models import Passenger, Flight
+from .models import Passenger
 
 
 class PassengerForm(ModelForm):
@@ -9,11 +9,3 @@ class PassengerForm(ModelForm):
         """Meta class"""
         model = Passenger
         fields = '__all__'
-
-
-class FlightForm(ModelForm):
-    """Flight form"""
-    class Meta:
-        """Meta class"""
-        model = Flight
-        fields = ['departure_time', 'arrival_time']

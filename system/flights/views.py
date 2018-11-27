@@ -7,7 +7,7 @@ from django.db import transaction
 from django.shortcuts import render, get_object_or_404, redirect
 from django.utils import timezone
 from dateutil.parser import parse
-from system.flights.forms import PassengerForm, FlightForm
+from system.flights.forms import PassengerForm
 from system.flights.models import Flight, Passenger, Ticket
 
 
@@ -16,7 +16,6 @@ def flights_view(request):
     if request.method == 'GET':
         departure = request.GET.get("departure_time")
         arrival = request.GET.get("arrival_time")
-        form = FlightForm()
         dep_time = timezone.now()
         arr_time = timezone.now()
         flights = Flight.objects.order_by('-departure_time').all()
@@ -37,7 +36,6 @@ def flights_view(request):
 
         return render(request, template_name="flights_list.html", context=locals())
     else:
-        form = FlightForm(request.POST)
         return redirect(to=request.path, context=locals())
 
 
