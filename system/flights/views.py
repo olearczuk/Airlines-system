@@ -1,8 +1,7 @@
 import pytz
 from dateutil.parser import parse
-from django.db import transaction
 from django.shortcuts import render, get_object_or_404, redirect
-from django.views.decorators.http import require_GET
+from django.views.decorators.http import require_GET, require_http_methods
 
 from system.flights.forms import PassengerForm
 from system.flights.models import Flight, Passenger, Ticket
@@ -28,9 +27,8 @@ def flights_view(request):
         return render(request, template_name="flights_list.html", context=locals())
 
 
-@transaction.atomic
+@require_http_methods(["GET", "POST"])
 def flight_view(request, flight_id):
-    """Flight view"""
     flight = get_object_or_404(Flight, id=flight_id)
     if request.method == 'GET':
         to_show = "add_info" in request.session
@@ -45,9 +43,6 @@ def flight_view(request, flight_id):
         form = PassengerForm(request.POST)
         if form.is_valid():
             Flight.objects.select_for_update().filter(id=flight_id)
-            passenger = Passenger(name=form.cleaned_data["name"],
-                                  surname=form.cleaned_data["surname"])
-            passenger.full_clean()
             reserved = Ticket.objects.filter(flight=flight).count()
             available = flight.airplane.capacity
 
@@ -55,10 +50,14 @@ def flight_view(request, flight_id):
 
             if reserved < available:
                 err = False
-                passenger.save()
+                passenger = Passenger.objects.create(name=form.cleaned_data["name"],
+                                                     surname=form.cleaned_data["surname"])
                 ticket = Ticket(flight=flight, passenger=passenger)
                 ticket.full_clean()
                 ticket.save()
                 request.session["add_info"] = "Done!"
 
+            return redirect(to=request.path)
+        else:
+            request.session["add_info"] = "This passenger already booked a seat for this flight."
             return redirect(to=request.path)
