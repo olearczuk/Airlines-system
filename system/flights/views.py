@@ -1,42 +1,31 @@
-"""Views for flights list and particular flight"""
-
-# from django.http import JsonResponse
-# from django.core import serializers
-
+import pytz
+from dateutil.parser import parse
 from django.db import transaction
 from django.shortcuts import render, get_object_or_404, redirect
-from django.utils import timezone
-from dateutil.parser import parse
+from django.views.decorators.http import require_GET
+
 from system.flights.forms import PassengerForm
 from system.flights.models import Flight, Passenger, Ticket
 
 
+@require_GET
 def flights_view(request):
-    """Flights view"""
     if request.method == 'GET':
         departure = request.GET.get("departure_time")
         arrival = request.GET.get("arrival_time")
-        dep_time = timezone.now()
-        arr_time = timezone.now()
         flights = Flight.objects.order_by('-departure_time').all()
         was_err = False
         if departure and arrival:
             try:
-                dep_time = parse(departure)
-                arr_time = parse(arrival)
-            except Exception as e:
-                print(e)
+                dep_time = parse(departure).replace(tzinfo=pytz.utc)
+                arr_time = parse(arrival).replace(tzinfo=pytz.utc)
+            except Exception:
                 was_err = True
                 return render(request, template_name="flights_list.html", context=locals())
 
-        if departure is not None and arrival is not None:
-            flights = Flight.objects.filter(departure_time__gte=dep_time,
-                                            arrival_time__lte=arr_time).order_by('-departure_time')\
-                                            .all()
-
+            flights = flights.filter(departure_time__gte=dep_time, arrival_time__lte=arr_time)\
+                .order_by('-departure_time').all()
         return render(request, template_name="flights_list.html", context=locals())
-    else:
-        return redirect(to=request.path, context=locals())
 
 
 @transaction.atomic
