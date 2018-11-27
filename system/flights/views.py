@@ -75,8 +75,3 @@ def flight_view(request, flight_id):
                 request.session["add_info"] = "Done!"
 
             return redirect(to=request.path)
-
-
-def index(request):
-    """Index"""
-    return redirect("/flights/flights_list")
