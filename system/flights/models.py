@@ -1,16 +1,12 @@
-"""models module"""
 from django.core.exceptions import ValidationError
 from django.db import models
-from django.db.models import Q
 
 
 class Passenger(models.Model):
-    """Passenger class"""
     name = models.CharField(max_length=100)
     surname = models.CharField(max_length=100)
 
     class Meta:
-        """Meta"""
         unique_together = ('name', 'surname')
 
     def __str__(self):
@@ -18,7 +14,6 @@ class Passenger(models.Model):
 
 
 class Airplane(models.Model):
-    """Airplane class"""
     capacity = models.IntegerField(default=25)
     official_number = models.CharField(max_length=100, primary_key=True)
 
@@ -31,12 +26,10 @@ class Airplane(models.Model):
 
 
 class Airport(models.Model):
-    """Airport class"""
     country = models.CharField(max_length=100)
     city = models.CharField(max_length=100)
 
     class Meta:
-        """Meta"""
         unique_together = ('country', 'city')
 
     def __str__(self):
@@ -44,12 +37,10 @@ class Airport(models.Model):
 
 
 class Crew(models.Model):
-    """Crew class"""
     captainsName = models.CharField(max_length=150)
     captainsSurname = models.CharField(max_length=150)
 
     class Meta:
-        """Meta"""
         unique_together = ('captainsName', 'captainsSurname')
 
     def __str__(self):
@@ -57,7 +48,6 @@ class Crew(models.Model):
 
 
 class Flight(models.Model):
-    """Flight class"""
     start_airport = models.ForeignKey(Airport, on_delete=models.CASCADE,
                                       related_name='start_airport')
     departure_time = models.DateTimeField()
@@ -92,7 +82,6 @@ class Flight(models.Model):
 
 
 class Ticket(models.Model):
-    """Ticket class"""
     flight = models.ForeignKey(Flight, on_delete=models.CASCADE)
     passenger = models.ForeignKey(Passenger, on_delete=models.CASCADE)
 
