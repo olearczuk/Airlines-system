@@ -9,6 +9,7 @@
     </div>
     {% if request.user.is_authenticated %}
         <form method="post">
+            {% csrf_token %}
             <div class="form-group row">
                     <div class="form-group col-md-10">
                         <input type="text" class="form-control" name="name" placeholder="Name">
