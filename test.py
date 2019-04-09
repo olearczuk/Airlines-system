@@ -69,10 +69,10 @@ class ApiTest(TestCase):
 class SeleniumTest(StaticLiveServerTestCase):
     date = datetime.strptime('2018-12-22', '%Y-%m-%d').astimezone(timezone.utc)
 
-    def procedure(self, driver, flightNum):
+    def procedure(self, driver, crew_num, flightNum):
         # Logging in
-        driver.get("{}/".format(self.live_server_url))
-        driver.find_element_by_id("login_link").click()
+        driver.get("{}/auth/login".format(self.live_server_url))
+        # driver.find_element_by_id("login_link").click()
         driver.find_element_by_id("login_username").send_keys("username")
         driver.find_element_by_id("login_password").send_keys("password")
         driver.find_element_by_id("login_button").click()
@@ -80,11 +80,11 @@ class SeleniumTest(StaticLiveServerTestCase):
         # Try to change crew
         select = "select{}".format(flightNum)
         button = "select_button{}".format(flightNum)
-        driver.get("{}/static/crews.html".format(self.live_server_url))
+        driver.get("{}/static/crews_vue.html".format(self.live_server_url))
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.ID, select))
         )
-        Select(driver.find_element_by_id(select)).select_by_index(3)
+        Select(driver.find_element_by_id(select)).select_by_index(crew_num)
         driver.find_element_by_id(button).click()
 
     def test(self):
@@ -106,8 +106,8 @@ class SeleniumTest(StaticLiveServerTestCase):
         user.set_password("password")
         user.save()
 
-        self.procedure(driver, 1)
+        self.procedure(driver, 3, 1)
 
         driver1 = webdriver.Firefox()
 
-        self.procedure(driver1, 2)
+        self.procedure(driver1, 4, 1)

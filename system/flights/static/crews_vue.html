@@ -48,6 +48,7 @@
                             v-on:patch-crew="patchCrew($event)"
                             v-bind:crews='crews'
                             v-bind:flight='flight'
+                            v-bind:id='flight.id'
                         ></crew-picker>
                     </td>
                     <td>{{ flight.airplane.official_number }}</td>
@@ -61,7 +62,7 @@
 
      <script>
         Vue.component('crew-picker', {
-            props:['crews', 'flight'],
+            props:['crews', 'flight', 'id'],
             data() {
                 return {
                     selectedCrew: '',
@@ -73,7 +74,7 @@
                     <div class="row">
                         <div class="col-md-8">
                             <div class="form-group">
-                                <select class="form-control" v-model="selectedCrew">
+                                <select class="form-control" v-model="selectedCrew" :id='"select" + id'>
                                     <option value=''>Choose crew</option>
                                     <option v-for="crew in crews" :value="crew.id">
                                         {{crew.captainsName + ' ' + crew.captainsSurname}}
@@ -81,7 +82,8 @@
                                 </select>
                             </div>
                         </div>
-                        <button type="button" class="btn btn-primary" @click="clicked">Submit</button>
+                        <button type="button" class="btn btn-primary" @click="clicked"
+                            :id='"select_button" + id'>Submit</button>
                     </div>
                 </form>
             `,
